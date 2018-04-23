@@ -10,7 +10,7 @@ y = boundary(:,2);
 [u,v] = mid(x,y);
 %[u,v] = tourne(u,v);
 
-n = 1; % degre du polynomes
+n = 1; %degre du polynome
 dth = 0.5; %precision sur l'angle
 
 [m1,npts,found] = gpente(u,v,1,n,dth);
