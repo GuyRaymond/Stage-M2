@@ -9,7 +9,7 @@ mp = mc;
 while (npts < length(x)) && (~found)
     npts = npts+1;
     mp = mc;
-    [a,b] = between0(x,k,npts);
+    [a,b] = between(x,k,npts);
     pol = polyfit(x(a:b)-x(k),y(a:b),n);
     mc = pol(end-1);
     found = abs(atand(abs((mp-mc)/(1+mp*mc)))) < dth;
