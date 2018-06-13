@@ -1,0 +1,28 @@
+I introduction
+
+1)  contexte : transport, vitre voiture, train, avion
+
+2) Mouillage (mouillage partiel)
+
+mouillage partiel + mouillage dynamique
+
+lois de young
+
+lois d'angle dynamique
+
+II Manipulation: description
+
+Caméra, photos
+
+Soufflerie/fil chaud, profil, traitement du signal
+
+III Résultats
+
+Angle de contact
+
+Position du maximum
+
+Longueur
+
+
+IV Conclusion et perspective
