@@ -1,0 +1,59 @@
+
+L'écoulement peut être séparé entre 2 région dont l'une est la région où les effets visqueux son dominant.
+
+La couche limite est la région dans un écoulement où les effets visqueux 
+sont dominant.
+
+La taille caractéristique de la couche limite est souvent petite 
+par rappor à la taille caractérisque de.
+
+begin{equation}
+ {\partial u\over\partial x}+{\partial \upsilon\over\partial y}=0 
+end{equation}
+
+begin{equation}
+ u{\partial u \over \partial x}+\upsilon{\partial u \over \partial y}=-{1\over \rho} {\partial p \over \partial x}+{\nu}\left({\partial^2 u\over \partial x^2}+{\partial^2 u\over \partial y^2}\right) 
+end{equation}
+
+begin{equation}
+ u{\partial \upsilon \over \partial x}+\upsilon{\partial \upsilon \over \partial y}=-{1\over \rho} {\partial p \over \partial y}+{\nu}\left({\partial^2 \upsilon\over \partial x^2}+{\partial^2 \upsilon\over \partial y^2}\right) 
+end{equation}
+
+
+ u{\partial u \over \partial x}+\upsilon{\partial u \over \partial y}=-{1\over \rho} {\partial p \over \partial x}+{\nu}{\partial^2 u\over \partial y^2} 
+
+ {1\over \rho} {\partial p \over \partial y}=0 
+
+
+ {\partial u\over\partial x}+{\partial \upsilon\over\partial y}=0 
+
+ u{\partial u \over \partial x}+\upsilon{\partial u \over \partial y}=U\frac{dU}{dx}+{\nu}{\partial^2 u\over \partial y^2} 
+
+
+ \frac{dp}{dx}=0 
+
+
+ u{\partial u \over \partial x}+\upsilon{\partial u \over \partial y}={\nu}{\partial^2 u\over \partial y^2} 
+ 
+
+U(x) = U = \text{constant},  d U / d x = 0
+
+x\rightarrow c^2 x, \quad y\rightarrow cy, \quad u\rightarrow u, \quad v\rightarrow \frac{v}{c}
+
+
+ \eta = \dfrac{y}{\delta(x)} = y \sqrt{ \dfrac{U}{2 \nu x} }, \quad  \psi = \sqrt{2 \nu U x} f(\eta) 
+
+where <math> \delta(x) = \sqrt{  \nu x / U}  is the [[boundary layer thickness]] and <math>\psi is the [[stream function]], in which the newly introduced normalized stream function, <math> f(\eta) , is only a function of the similarity variable. This leads directly to the velocity components
+
+ u(x,y) =   \dfrac{\partial \psi}{\partial y} = U f'(\eta), \quad v(x,y) = - \dfrac{\partial \psi}{\partial x} = \sqrt{\dfrac{\nu U}{2 x}} [ \eta f'(\eta) - f(\eta)]  
+
+Where the prime denotes derivation with respect to <math> \eta .
+Substitution into the momentum equation gives the Blasius equation
+
+ f''' + f'' f = 0 
+
+The boundary conditions are the [[no-slip condition]], the impermeability of the wall and the free stream velocity outside the boundary layer
+
+ u(x,0) = 0 \rightarrow f'(0) = 0 
+ v(x,0) = 0 \rightarrow f(0) = 0  
+ u(x,\infty) = U \rightarrow f'(\infty) = 1 
