@@ -25,31 +25,39 @@ La couche limite est cette région proche de la paroi où les effets visqueux ne
 C'est Prandtl qui fut le premier à definir la couche limite. 
 
 \subsection{Equation de la couche limite }
-Les hypothèses faites sont : un écoulement stationnaire, incompressible, bidimensionnelle et uniforme à l'infini (loin de la paroi).
 
-Notre paroi est placée en $y = 0$
+Les équations de la couche limite sont définies pour un écoulement bidimensionnel et nous nous les donnerons uniquement pour le cas d'un écoulement laminaire puisque nos écoulements étaient laminaires dans nos expériences.
 
-Nous rajoutons l'hypthosèse d'écoulement laminaire puisque notre écoulement était laminaire laminaire.
+Soit $u$ la vitesse de l'écoulement parallèle à la paroi suivant l'axe $x$ et $v$ la vitesse normale à la paroi suivant l'axe $y$.
+
+Soit $U$ et $V$ les vitesses caractéristiques dans la couche limite respectivement $u$ et l'axe $v$.
+
+Soit $L$ et $\delta$ la taille caractéristique de la couche limite suivant respectivement l'axe $x$ et l'axe $y$.
+
+En plus de l'hypothèse d'écoulement bidimensionnel, les hypothèses faites sont : écoulement stationnaire, incompressible, $\delta << L$ et les effets visqueux et inertiels ont du même ordre de grandeur dans la couche limite.
+
+
 
 l'équation de la continuté s'écrit alors:
-
-\begin{equation}
-\frac{\partial u}{\partial w}
-\end{equation}
 
 \begin{equation}
 \label{Eq:1}
 \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = 0
 \end{equation}
-%l'équation de la continuté s'écrit alors:
-%
-%Celle de
-%Navier-Stockes s'écrit:
-%\begin{equation}[Navier, Stockes]
-%\label{Eq:Stockes}
-%	u\frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} = - \frac{1}{\rho}+ \nu\left(\frac{\partial^{2} u}{x^{2}} + \frac{\partial^{2} u}{y^{2}}\right)
-%	u\frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} = - \frac{1}{\rho}+ \nu\left(\frac{\partial^{2} v}{x^{2}} + \frac{\partial^{2} v}{y^{2}}\right)
-%\end{equation}
+
+De cette équation : $V \approx \frac{U\delta}{L} $
+
+
+
+L'équation de Navier-Stokes s'écrit:
+
+\begin{align}[Navier, Stokes]
+u\frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} &= - \frac{1}{\rho}\frac{\partial p}{\partial  x} + \nu\left(\frac{\partial^{2} u}{\partial  x^{2}} + \frac{\partial^{2} u}{\partial  y^{2}}\right) \\
+
+u\frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} &= - \frac{1}{\rho}\frac{\partial p}{\partial } + \nu\left(\frac{\partial^{2} v}{\partial  x^{2}} + \frac{\partial^{2} v}{\partial  y^{2}}\right)
+\end{align}
+
+
 %\subsection{Equation de Blasius}
 %\begin{thebibliography}{}
 %\bibitem{RefJ}
