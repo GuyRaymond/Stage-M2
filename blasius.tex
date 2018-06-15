@@ -1,59 +1,152 @@
-
-L'écoulement peut être séparé entre 2 région dont l'une est la région où les effets visqueux son dominant.
-
-La couche limite est la région dans un écoulement où les effets visqueux 
-sont dominant.
-
-La taille caractéristique de la couche limite est souvent petite 
-par rappor à la taille caractérisque de.
-
-begin{equation}
- {\partial u\over\partial x}+{\partial \upsilon\over\partial y}=0 
-end{equation}
-
-begin{equation}
- u{\partial u \over \partial x}+\upsilon{\partial u \over \partial y}=-{1\over \rho} {\partial p \over \partial x}+{\nu}\left({\partial^2 u\over \partial x^2}+{\partial^2 u\over \partial y^2}\right) 
-end{equation}
-
-begin{equation}
- u{\partial \upsilon \over \partial x}+\upsilon{\partial \upsilon \over \partial y}=-{1\over \rho} {\partial p \over \partial y}+{\nu}\left({\partial^2 \upsilon\over \partial x^2}+{\partial^2 \upsilon\over \partial y^2}\right) 
-end{equation}
-
-
- u{\partial u \over \partial x}+\upsilon{\partial u \over \partial y}=-{1\over \rho} {\partial p \over \partial x}+{\nu}{\partial^2 u\over \partial y^2} 
-
- {1\over \rho} {\partial p \over \partial y}=0 
-
-
- {\partial u\over\partial x}+{\partial \upsilon\over\partial y}=0 
-
- u{\partial u \over \partial x}+\upsilon{\partial u \over \partial y}=U\frac{dU}{dx}+{\nu}{\partial^2 u\over \partial y^2} 
-
-
- \frac{dp}{dx}=0 
-
-
- u{\partial u \over \partial x}+\upsilon{\partial u \over \partial y}={\nu}{\partial^2 u\over \partial y^2} 
+\documentclass[french]{article}
  
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{mathtools} 
+\begin{document}
+ 
+\tableofcontents
+ 
+\vspace{2cm} %Add a 2cm space
+ 
+\begin{abstract}
+We are studied a drop of water sliding on an horizontal plan. The drop was placed inside a wind tunnel.
+\end{abstract}
 
-U(x) = U = \text{constant},  d U / d x = 0
+\section{Couche limite}
+Notre goutte d'eau (de volume de l'ordre millilitre) est sur une paroi horizontales en présence d'un écoulement d'air.
 
-x\rightarrow c^2 x, \quad y\rightarrow cy, \quad u\rightarrow u, \quad v\rightarrow \frac{v}{c}
+
+Pour déterminer les vitesses de l'écoulement d'air au voisinage de notre goutte d'eau, nous devons nous intéresser à la couche limite puisque l'écoulement d'un fluide en présence d'une paroi peut être séparé en deux régions dont l'une proche de la paroi où les effets visqueux ne peuvent être négligés par rapport aux effets inertiels et l'autre région à l'extérieur de la précédente (avec une frontière commune) où les effets visqueux peuvent être négligés.
+
+La couche limite est cette région proche de la paroi où les effets visqueux ne peuvent être négligés.
+
+C'est Prandtl qui fut le premier à definir la couche limite. 
+
+\subsection{Equation de la couche limite }
+
+Les équations de la couche limite sont définies pour un écoulement bidimensionnel et nous nous les donnerons uniquement pour le cas d'un écoulement laminaire puisque nos écoulements étaient laminaires dans nos expériences.
+
+Soit $u$ la vitesse de l'écoulement parallèle à la paroi suivant l'axe $x$ et $v$ la vitesse normale à la paroi suivant l'axe $y$.
+
+Soit $U$ et $V$ les vitesses caractéristiques dans la couche limite respectivement de $u$ et $v$.
+
+Soit $L$ et $\delta$ la taille caractéristique de la couche limite suivant respectivement l'axe $x$ et l'axe $y$.
+
+En plus de l'hypothèse d'écoulement bidimensionnel, les hypothèses faites sont : écoulement stationnaire, incompressible, $\delta << L$ et les effets visqueux et inertiels ont du même ordre de grandeur dans la couche limite.
 
 
- \eta = \dfrac{y}{\delta(x)} = y \sqrt{ \dfrac{U}{2 \nu x} }, \quad  \psi = \sqrt{2 \nu U x} f(\eta) 
 
-where <math> \delta(x) = \sqrt{  \nu x / U}  is the [[boundary layer thickness]] and <math>\psi is the [[stream function]], in which the newly introduced normalized stream function, <math> f(\eta) , is only a function of the similarity variable. This leads directly to the velocity components
+l'équation de la continuté s'écrit alors:
 
- u(x,y) =   \dfrac{\partial \psi}{\partial y} = U f'(\eta), \quad v(x,y) = - \dfrac{\partial \psi}{\partial x} = \sqrt{\dfrac{\nu U}{2 x}} [ \eta f'(\eta) - f(\eta)]  
+\begin{equation}
+\label{Eq:1}
+\frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = 0
+\end{equation}
 
-Where the prime denotes derivation with respect to <math> \eta .
-Substitution into the momentum equation gives the Blasius equation
 
- f''' + f'' f = 0 
+L'équation de Navier-Stokes s'écrit:
 
-The boundary conditions are the [[no-slip condition]], the impermeability of the wall and the free stream velocity outside the boundary layer
+\begin{align}%[Navier, Stokes]
+	u\frac{\partial u}{\partial x} + 
+	v\frac{\partial u}{\partial y} 
+	&= - \frac{1}{\rho}
+	\frac{\partial p}{\partial  x} +
+	\nu\left (\frac{\partial^{2} u}{\partial  x^{2}} + 
+	\frac{\partial^{2} u}{\partial  y^{2}}\right ) \\
+	u\frac{\partial v}{\partial x} + 
+	v\frac{\partial v}{\partial y} 
+	&= - \frac{1}{\rho}
+	\frac{\partial p}{\partial  y} +
+	\nu\left (\frac{\partial^{2} v}{\partial  x^{2}} + 
+	\frac{\partial^{2} v}{\partial  y^{2}}\right ) 
+\end{align}
 
- u(x,0) = 0 \rightarrow f'(0) = 0 
- v(x,0) = 0 \rightarrow f(0) = 0  
- u(x,\infty) = U \rightarrow f'(\infty) = 1 
+On pose:
+
+\begin{align*}
+	u &= U(1 + \epsilon_{u} + \epsilon_{u}^{2} + \dots)&  &= Uu_{*}\\
+	v &= V(1 + \epsilon_{v} + \epsilon_{v}^{2} + \dots)& &= Vv_{*}\\
+	x &= L(1 + \epsilon_{x} + \epsilon_{x}^{2} + \dots)& &= Lx_{*}\\
+	y &= \delta(1 + \epsilon_{y} + \epsilon_{y}^{2} + \dots)& &= \delta y_{*}\\
+	p &= \lambda(1 + \epsilon_{p} + \epsilon_{p}^{2} + \dots)& &= \lambda p_{*}
+\end{align*}
+Nos équations se réécrivent :
+\begin{equation}
+	\frac{U}{L}\frac{\partial u_{*}}{\partial x_{*}} + \frac{V}{\delta}\frac{\partial v_{*}}{\partial y_{*}} = 0
+\end{equation}
+\begin{align}%[Navier, Stokes]
+	\frac{U^{2}}{L}u_{*}
+	\frac{\partial u_{*}}{\partial x_{*}} + 
+	\frac{UV}{\delta}v_{*}\frac{\partial u_{*}}{\partial y_{*}} 
+	&= - \frac{\lambda}{\rho L}
+	\frac{\partial p_{*}}{\partial  x_{*}} +
+	\nu  \left (
+	\frac{U}{L^{2}}\frac{\partial^{2} u_{*}}{\partial  x_{*}^{2}} + 
+	\frac{U}{\delta ^ {2}}
+	\frac{\partial^{2} u^{*}}{\partial  y_{*}}\right ) \\
+	\frac{UV}{L}u_{*}\frac{\partial v_{*}}{\partial x_{*}} + 
+	\frac{V^{2}}{\delta}v_{*}\frac{\partial v_{*}}{\partial y_{*}} 
+	&= - \frac{\lambda}{\rho\delta}
+	\frac{\partial p_{*}}{\partial  y_{*}} +
+	\nu\left (\frac{V}{L^{2}}
+	\frac{\partial^{2} v_{*}}{\partial  x_{*}} + 
+	\frac{V}{\delta^{2}}
+	\frac{\partial^{2} v_{*}}{\partial  y_{*}}\right ) 
+\end{align}
+Nous obtenons :
+\begin{align*}
+	V &\sim \frac{U\delta}{L}\\
+	U &\sim \frac{VL}{\delta}
+\end{align*}
+\begin{align}
+	\frac{U^{2}}{L}\left (
+	u_{*}\frac{\partial u_{*}}{\partial x_{*}} + 
+	v_{*}\frac{\partial u_{*}}{\partial y_{*}} 
+	\right )
+	&= - \frac{\lambda}{\rho L}
+	\frac{\partial p_{*}}{\partial  x_{*}} +
+	\nu  \frac{U}{L^{2}}\left (
+	\frac{\partial^{2} u_{*}}{\partial  x_{*}^{2}} + 
+	\frac{L^{2}}{\delta ^ {2}}
+	\frac{\partial^{2} u^{*}}{\partial  y_{*}^{2}}\right ) \\
+	\frac{V^{2}}{\delta}\left (
+	u_{*}\frac{\partial v_{*}}{\partial x_{*}} + 
+	v_{*}\frac{\partial v_{*}}{\partial y_{*}} 
+	\right )
+	&= - \frac{\lambda}{\rho\delta}
+	\frac{\partial p_{*}}{\partial  y_{*}} +
+	\nu\frac{V}{\delta^{2}}\left (
+	\frac{\delta^{2}}{L^{2}}
+	\frac{\partial^{2} v_{*}}{\partial  x_{*}^{2}} + 
+	\frac{\partial^{2} v_{*}}{\partial  y_{*}^{2}}\right ) 
+\end{align}
+\begin{align}
+	u_{*}\frac{\partial u_{*}}{\partial x_{*}} + 
+	v_{*}\frac{\partial u_{*}}{\partial y_{*}} 
+	&= - \frac{\lambda}{\rho U^{2}}
+	\frac{\partial p_{*}}{\partial  x_{*}} +
+	\frac{\nu}{UL}\left (
+	\frac{\partial^{2} u_{*}}{\partial  x_{*}^{2}} + 
+	\frac{L^{2}}{\delta ^ {2}}
+	\frac{\partial^{2} u^{*}}{\partial  y_{*}^{2}}\right ) \\
+	u_{*}\frac{\partial v_{*}}{\partial x_{*}} + 
+	v_{*}\frac{\partial v_{*}}{\partial y_{*}} 
+	&= - \frac{\lambda}{\rho V^{2}}
+	\frac{\partial p_{*}}{\partial  y_{*}} +
+	\frac{\nu}{V\delta}\left (
+	\frac{\delta^{2}}{L^{2}}
+	\frac{\partial^{2} v_{*}}{\partial  x_{*}^{2}} + 
+	\frac{\partial^{2} v_{*}}{\partial  y_{*}^{2}}\right ) 
+\end{align}
+%\subsection{Equation de Blasius}
+%\begin{thebibliography}{}
+%\bibitem{RefJ}
+%% Format for Journal Reference
+%Author, Article title, Journal, Volume, page numbers (year)
+%% Format for books
+%\bibitem{RefB}
+%Author, Book title, page numbers. Publisher, place (year)
+%\end{thebibliography}
+\end{document}
