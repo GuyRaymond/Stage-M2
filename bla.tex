@@ -3,26 +3,18 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{babel}
-\usepackage{amsmath} 
+\usepackage{mathtools} 
 \begin{document}
  
-\tableofcontents
- 
-\vspace{2cm} %Add a 2cm space
- 
-\begin{abstract}
-We are studied a drop of water sliding on an horizontal plan. The drop was placed inside a wind tunnel.
-\end{abstract}
-
 \section{Couche limite}
-Notre goutte d'eau (de volume de l'ordre millilitre) est sur une paroi horizontales en présence d'un écoulement d'air.
+Notre goutte d'eau (de volume de l'ordre millilitre) est sur une paroi horizontale en présence d'un écoulement d'air.
 
 
-Pour déterminer les vitesses de l'écoulement d'air au voisinage de notre goutte d'eau, nous devons nous intéresser à la couche limite puisque l'écoulement d'un fluide en présence d'une paroi peut être séparé en deux régions dont l'une proche de la paroi où les effets visqueux ne peuvent être négligés par rapport aux effets inertiels et l'autre région à l'extérieur de la précédente (avec une frontière commune) où les effets visqueux peuvent être négligés.
+Pour déterminer les vitesses de l'écoulement d'air au voisinage de notre goutte d'eau, nous devons nous intéresser à la couche limite parce que d'après la théorie sur la couche limite, l'écoulement d'un fluide en présence d'une paroi peut être séparé en deux régions dont l'une proche de la paroi où les effets visqueux ne peuvent être négligés par rapport aux effets inertiels et l'autre région à l'extérieur de la précédente (avec une frontière commune) où les effets visqueux peuvent être négligés.
 
 La couche limite est cette région proche de la paroi où les effets visqueux ne peuvent être négligés.
 
-C'est Prandtl qui fut le premier à definir la couche limite. 
+C'est Prandtl qui fut le premier à définir la couche limite. 
 
 \subsection{Equation de la couche limite }
 
@@ -30,35 +22,253 @@ Les équations de la couche limite sont définies pour un écoulement bidimensio
 
 Soit $u$ la vitesse de l'écoulement parallèle à la paroi suivant l'axe $x$ et $v$ la vitesse normale à la paroi suivant l'axe $y$.
 
-Soit $U$ et $V$ les vitesses caractéristiques dans la couche limite respectivement $u$ et l'axe $v$.
+Soit $U$ et $V$ les vitesses caractéristiques dans la couche limite respectivement de $u$ et $v$ ($\left| u \right| \sim U$ et $\left| v \right| \sim U$).
 
-Soit $L$ et $\delta$ la taille caractéristique de la couche limite suivant respectivement l'axe $x$ et l'axe $y$.
+Soit $L$ et $\delta$ la taille caractéristique de la couche limite suivant respectivement l'axe $x$ et l'axe $y$ ($\left| x \right| \sim L$ et $\left| y \right| \sim \delta$).
 
-En plus de l'hypothèse d'écoulement bidimensionnel, les hypothèses faites sont : écoulement stationnaire, incompressible, $\delta << L$ et les effets visqueux et inertiels ont du même ordre de grandeur dans la couche limite.
+En plus de l'hypothèse d'écoulement bidimensionnel, les hypothèses faites sont : la pesanteur est négligée, l'écoulement est stationnaire, incompressible, $\frac{\delta}{L} << 1$ et les effets visqueux et inertiels sont du même ordre de grandeur dans la couche limite.
 
 
 
-l'équation de la continuté s'écrit alors:
+l'équation de la continuité s'écrit alors:
 
 \begin{equation}
 \label{Eq:1}
 \frac{\partial u}{\partial x} + \frac{\partial v}{\partial y} = 0
 \end{equation}
 
-De cette équation : $V \approx \frac{U\delta}{L} $
-
-
 
 L'équation de Navier-Stokes s'écrit:
 
-\begin{align}[Navier, Stokes]
-u\frac{\partial u}{\partial x} + v\frac{\partial u}{\partial y} &= - \frac{1}{\rho}\frac{\partial p}{\partial  x} + \nu\left(\frac{\partial^{2} u}{\partial  x^{2}} + \frac{\partial^{2} u}{\partial  y^{2}}\right) \\
-
-u\frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} &= - \frac{1}{\rho}\frac{\partial p}{\partial } + \nu\left(\frac{\partial^{2} v}{\partial  x^{2}} + \frac{\partial^{2} v}{\partial  y^{2}}\right)
+\begin{align}%[Navier, Stokes]
+	u\frac{\partial u}{\partial x} + 
+	v\frac{\partial u}{\partial y} 
+	&= - \frac{1}{\rho}
+	\frac{\partial p}{\partial  x} +
+	\nu\left (
+	\frac{\partial^{2} u}{\partial  x^{2}} + 
+	\frac{\partial^{2} u}{\partial  y^{2}}
+	\right ) \\
+	u\frac{\partial v}{\partial x} + 
+	v\frac{\partial v}{\partial y} 
+	&= - \frac{1}{\rho}
+	\frac{\partial p}{\partial  y} +
+	\nu\left (
+	\frac{\partial^{2} v}{\partial  x^{2}} + 
+	\frac{\partial^{2} v}{\partial  y^{2}}
+	\right ) 
 \end{align}
 
+On pose:
 
-%\subsection{Equation de Blasius}
+\begin{align*}
+	u &= Uu_{*}\\
+	v &= Vv_{*}\\
+	x &= Lx_{*}\\
+	y &= \delta y_{*}\\
+	p &= \lambda p_{*}
+\end{align*}
+Avec pour tout entier  $n >= 0$:
+\begin{align*}
+	\left| u_{*} \right |,
+	\left| v_{*} \right |,
+	\left| p_{*} \right | 
+	&\sim 1\\
+	\left |\frac{\partial^{n} u_{*}}{\partial x_{*}^{n}} \right |,
+	\left |\frac{\partial^{n} v_{*}}{\partial x_{*}^{n}} \right |,
+	\left |\frac{\partial^{n} p_{*}}{\partial x_{*}^{n}} \right |
+	&\sim 1\\
+	\left |\frac{\partial^{n} u_{*}}{\partial y_{*}^{n}} \right |,
+	\left |\frac{\partial^{n} v_{*}}{\partial y_{*}^{n}} \right |,
+	\left |\frac{\partial^{n} p_{*}}{\partial y_{*}^{n}} \right |
+	&\sim 1
+\end{align*}
+Les équations de Navier-Stokes se réécrivent :
+\begin{align*}
+	\frac{U^{2}}{L}
+	u_{*}
+	\frac{\partial u_{*}}{\partial x_{*}} + 
+	\frac{UV}{\delta}
+	v_{*}
+	\frac{\partial u_{*}}{\partial y_{*}} 
+	&= - \frac{\lambda}{\rho L}
+	\frac{\partial p_{*}}{\partial  x_{*}} +
+	\nu 
+	\left(
+	\frac{U}{L^{2}}
+	\frac{\partial^{2} u_{*}}{\partial  x_{*}^{2}} + 
+	\frac{U}{\delta ^ {2}}
+	\frac{\partial^{2} u_{*}}{\partial  y_{*}^{2}}
+	\right) \\
+	\frac{UV}{L}
+	u_{*}
+	\frac{\partial v_{*}}{\partial x_{*}} + 
+	\frac{V^{2}}{\delta}
+	v_{*}
+	\frac{\partial v_{*}}{\partial y_{*}} 
+	&= 
+	- \frac{\lambda}{\rho\delta}
+	\frac{\partial p_{*}}{\partial  y_{*}} +
+	\nu
+	\left(
+	\frac{V}{L^{2}}
+	\frac{\partial^{2} v_{*}}{\partial  x_{*}^{2}} + 
+	\frac{V}{\delta^{2}}
+	\frac{\partial^{2} v_{*}}{\partial  y_{*}^{2}}
+	\right) 
+\end{align*}
+De l'hypothèse $\frac{\delta}{L} << 1 $, on a:
+\begin{align*}
+	\frac{\delta}{L} &<< 1\\
+	\frac{U}{L^{2}}\frac{\partial^{2} u_{*}}{\partial  x_{*}^{2}} 
+	&<<
+	\frac{U}{\delta ^ {2}}
+	\frac{\partial^{2} u_{*}}{\partial  y_{*}^{2}} \\
+	\frac{V}{L^{2}}
+	\frac{\partial^{2} v_{*}}{\partial  x_{*}^{2}} 
+	&<<
+	\frac{V}{\delta^{2}}
+	\frac{\partial^{2} v_{*}}{\partial  y_{*}^{2}}
+\end{align*}
+
+L'équation de continuité nous dit:
+
+\begin{equation*}
+	\frac{V}{\delta} \sim \frac{U}{L}
+\end{equation*}
+
+En conservant les termes dominants et de $\frac{V}{\delta} \sim \frac{U}{L}$, l'équation de Navier-Stokes s'approxime par:
+\begin{align*}
+	\frac{U^{2}}{L}
+	\left(
+	u_{*}\frac{\partial u_{*}}{\partial x_{*}} + 
+	v_{*}\frac{\partial u_{*}}{\partial y_{*}} 
+	\right)
+	&= - \frac{\lambda}{\rho L}
+	\frac{\partial p_{*}}{\partial  x_{*}} +
+	\nu  \frac{U}{\delta^{2}}
+	\frac{\partial^{2} u_{*}}{\partial  y_{*}^{2}} \\
+	\frac{V^{2}}{\delta}
+	\left(
+	u_{*}\frac{\partial v_{*}}{\partial x_{*}} + 
+	v_{*}\frac{\partial v_{*}}{\partial y_{*}} 
+	\right)
+	&= - \frac{\lambda}{\rho\delta}
+	\frac{\partial p_{*}}{\partial  y_{*}} +
+	\nu\frac{V}{\delta^{2}}
+	\frac{\partial^{2} v_{*}}{\partial  y_{*}^{2}} 
+\end{align*}
+De l'hypothèse du même ordre grandeur des termes visqueux et inertiels, on a avec l'équation de Navier-Stokes selon $x$:
+
+\begin{align*}
+	\frac{U^{2}}{L} &\sim 
+	\nu\frac{U}{\delta^{2}} \\
+	\frac{\delta^{2}}{L} &\sim 
+	\frac{\nu}{U}\\
+	\frac{\delta^{2}}{L^{2}} &\sim 
+	\frac{\nu}{UL} = \frac{1}{Re_{L}} << 1
+\end{align*}
+
+On constate qu'on doit avoir un nombre de reynolds $\frac{UL}{\nu} = Re_{L}$ suffisament grand pour vérifier les hypothèses de la couche limite ($1 << Re_{L}$).
+
+De $ \frac{\delta^{2}}{L^{2}} \sim \frac{\nu}{UL} $  
+et $ V \sim \frac{U\delta}{L}$ on a :
+\begin{equation*}
+	\nu \sim \frac{U\delta}{L}\delta \sim V\delta
+\end{equation*}
+
+On constate que de $\nu \sim V\delta$, les termes visqueux et inertiels suivant $y$ ont aussi le même ordre de grandeur, en effet : 
+
+\begin{equation*}
+	\frac{V^{2}}{\delta} =
+	\frac{V^{2}\delta}{\delta ^ 2} =
+	V\delta \frac{V}{\delta^{2}} \sim \nu \frac{V}{\delta^{2}}
+\end{equation*}
+
+Ce qui donne l'ordre de grandeur de $\frac{1}{\rho}\frac{\partial p}{\partial y} \sim \frac{V^{2}}{\delta}$ en effet:
+
+
+\begin{equation*}
+	\frac{1}{\rho}
+	\frac{\partial p}{\partial y} 
+	= \frac{\lambda}{\rho\delta}
+	\frac{\partial p_{*}}{\partial  y_{*}}
+	= - \frac{V^{2}}{\delta}
+	\left(
+	u_{*}\frac{\partial v_{*}}{\partial x_{*}} + 
+	v_{*}\frac{\partial v_{*}}{\partial y_{*}} 
+	-\frac{\partial^{2} v_{*}}{\partial  y_{*}^{2}} 
+	\right)
+\end{equation*}
+
+Du fait que $\frac{U^{2}}{L}$ soit l'ordre de grandeur des termes de l'équation de Navier-Stokes suivant $x$ et que $\frac{V^{2}}{\delta} << \frac{U^2}{L}$ on a aboutit à l'approximation:
+\begin{equation*}
+	\frac{1}{\rho}\frac{\partial p}{\partial y} \approx 0
+\end{equation*}
+
+Les équations de la couche limites sont donc:
+
+\begin{align}	
+	\frac{\partial u}{\partial x} 
+	+
+	\frac{\partial v}{\partial y} 
+	&= 0 \\
+	u\frac{\partial u}{\partial x} + 
+	v\frac{\partial u}{\partial y} 
+	&= - \frac{1}{\rho}
+	\frac{\partial p}{\partial  x} +
+	\nu
+	\frac{\partial^{2} u}{\partial  y^{2}} \\
+	\frac{\partial p}{\partial y} 
+	&= 0
+\end{align}
+\subsection{Equation de Blasius}
+L'équation de blasius est l'équation de la couche limite pour un écoulement laminaire sur une plaque plane dont la vitesse $U$ loin de la couche limite est constante et parallèle à l'axe $x$.
+
+Soit $\varphi$ la fonction de courant tel que :
+
+\begin{align*}
+	u(x,y) &= 
+	\frac{\partial \varphi}{\partial y} \\
+	v(x,y) &= - 
+	\frac{\partial \varphi}{\partial x}
+\end{align*}
+
+On pose :
+
+\begin{align*}
+	\eta &= y \sqrt{\frac{U}{2\nu x }} \\
+	\varphi &= \sqrt{2\nu U x} f(\eta)
+\end{align*}
+\begin{align*}
+	u(x,y) = 
+	\frac{\partial \varphi}{\partial \eta} 
+	\frac{\partial \eta}{\partial y}
+	=
+	\sqrt{\frac{U}{2\nu x }} \sqrt{2\nu U x}\frac{d f}{\partial \eta}
+	= U \frac{d f}{\partial \eta}
+\end{align*}
+\begin{align*}
+	v(x,y) &= 
+	-\frac{\partial \varphi}{\partial \eta} 
+	\frac{\partial \eta}{\partial x}\\
+	&=
+	y\frac{U}{2\nu x^{2}}
+	\frac{1}{\sqrt{\frac{U}{2\nu x}}}
+	\frac{\partial \varphi}{\partial \eta}\\
+	&=
+	y\frac{\sqrt{\frac{U}{2\nu x}}}{x}
+	\frac{\partial \varphi}{\partial \eta}\\
+	&=
+	-y\frac{U}{2\nu x^{2}}
+	\frac{1}{\sqrt{\frac{U}{2\nu x}}}
+	\left(
+	\frac{2\nu U}{\sqrt{2\nu Ux }}\frac{\partial \eta}{\partial x}
+	\sqrt{2\nu U x}f(\eta) +  y\frac{d f}{\partial \eta}
+	\right)\\
+	&=
+\end{align*}
+
 %\begin{thebibliography}{}
 %\bibitem{RefJ}
 %% Format for Journal Reference
@@ -68,5 +278,3 @@ u\frac{\partial v}{\partial x} + v\frac{\partial v}{\partial y} &= - \frac{1}{\r
 %Author, Book title, page numbers. Publisher, place (year)
 %\end{thebibliography}
 \end{document}
-
-
