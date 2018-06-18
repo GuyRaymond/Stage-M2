@@ -3,7 +3,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{babel}
-\usepackage{mathtools} 
+%\usepackage{mathtools} 
+\usepackage{amsmath} 
 \begin{document}
  
 \section{Couche limite}
@@ -206,7 +207,7 @@ Du fait que $\frac{U^{2}}{L}$ soit l'ordre de grandeur des termes de l'équation
 	\frac{1}{\rho}\frac{\partial p}{\partial y} \approx 0
 \end{equation*}
 
-Les équations de la couche limites sont donc:
+Les équations de la couche limites sont donc :
 
 \begin{align}	
 	\frac{\partial u}{\partial x} 
@@ -241,15 +242,15 @@ On pose :
 	\varphi &= \sqrt{2\nu U x} f(\eta)
 \end{align*}
 On a:
-\begin{align}
+\begin{align*}
 	\frac{\partial \eta}{\partial x} &= 
-	-y\sqrt{\frac{U}{2\nu x}}\frac{1}{2x} = 
-	-\frac{\eta}{2x}\\
-	\frac{\partial \eta}{\partial y} &= 
-	\sqrt{\frac{u}{2\nu x }} = \frac{\eta}{y}\\
-	\frac{\partial^{2} \eta}{\partial y^{2}} &= 
-	\frac{\eta}{y^{2}} - \frac{\eta}{y^{2}} = 0
-\end{align}
+		-y\sqrt{\frac{U}{2\nu x}}\frac{1}{2x} &&= 
+		-\frac{\eta}{2x}\\
+		\frac{\partial \eta}{\partial y} &=
+		\sqrt{\frac{u}{2\nu x }} &&= \frac{\eta}{y}\\
+		\frac{\partial^{2} \eta}{\partial y^{2}} &= 
+		\frac{\eta}{y^{2}} - \frac{\eta}{y^{2}} &&= 0
+\end{align*}
 Puis on calcule $u$ et $v$ en fonction de $f$ et $\eta$.
 \begin{align*}
 	u(x,y) &= 
@@ -380,6 +381,52 @@ $ et :
 On trouve ainsi l'équation de la couche limite de Blasius:
 \begin{equation}	
 	\frac{d^{3}f}{d\eta^{3}} + f\frac{d^{2} f}{d\eta^{2}}
+\end{equation}
+Avec les conditions aux limites:
+\begin{align}
+	u(x,0) &= 0 &\Rightarrow &&
+	\left.
+	\frac{d f}{d \eta}     \right|_{\eta = 0} &= 0
+	\\
+	v(x,0) &= 0 &\Rightarrow &&
+	f(0) &= 0
+	\\
+	u(x,\infty) &= U &\Rightarrow &&
+	\left.
+	\frac{d f}{d \eta} \right|_{\eta = \infty} &= 1
+\end{align}
+Les grandeurs que nous avons vérifié expérimentalement provenant du résulat des équations de Blasius sont l'épaisseur de déplacement $\delta_{1}$, l'épaisseur de quantité de mouvement $\delta_{2}$ et le coefficient de frottement $C_{f}$
+\subsection{Epaisseur de déplacement}
+L'épaisseur de dépacement $\delta_{1}$ est défini par:
+\begin{equation}
+	\delta_{1} = 
+	\int_{0}^{^\infty}
+	\left(
+	1 - 
+	\frac{u}{U}
+	\right)
+	dy
+\end{equation}
+\subsection{Epaisseur de déplacement}
+L'épaisseur de dépacement $\delta_{2}$ est défini par:
+\begin{equation}
+	\delta_{2} = 
+	\int_{0}^{^\infty}
+	\left(
+	1 - 
+	\frac{u}{U}
+	\right)
+	\frac{u}{U}
+	dy
+\end{equation}
+\subsection{Coefficient de frottement à la paroi}
+Le coefficient de frottement à la paroi $C_{f}$ est défini par:
+\begin{equation}
+	C_{f} = 
+	\frac{2}{\rho U^{2}}
+	\left.
+	\frac{\partial u}{\partial y}
+	\right|_{y = 0}
 \end{equation}
 %\begin{thebibliography}{}
 %\bibitem{RefJ}
