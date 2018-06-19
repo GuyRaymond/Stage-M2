@@ -170,7 +170,7 @@ De l'hypothèse du même ordre grandeur des termes visqueux et inertiels, on a a
 	\frac{\nu}{UL} = \frac{1}{Re_{L}} << 1
 \end{align*}
 
-On constate qu'on doit avoir un nombre de reynolds $\frac{UL}{\nu} = Re_{L}$ suffisament grand pour vérifier les hypothèses de la couche limite ($1 << Re_{L}$).
+On constate qu'on doit avoir un nombre de Reynolds $\frac{UL}{\nu} = Re_{L}$ suffisamment grand pour vérifier les hypothèses de la couche limite ($1 << Re_{L}$).
 
 De $ \frac{\delta^{2}}{L^{2}} \sim \frac{\nu}{UL} $  
 et $ V \sim \frac{U\delta}{L}$ on a :
@@ -223,8 +223,8 @@ Les équations de la couche limites sont donc :
 	\frac{\partial p}{\partial y} 
 	&= 0
 \end{align}
-\subsection{Equations de Blasius}
-L'équation de blasius est l'équation de la couche limite pour un écoulement laminaire sur une plaque plane dont la vitesse $U$ loin de la couche limite est constante et parallèle à l'axe $x$.
+\subsection{Équations de Blasius}
+L'équation de Blasius est l'équation de la couche limite pour un écoulement laminaire sur une plaque plane dont la vitesse $U$ loin de la couche limite est constante et parallèle à l'axe $x$.
 
 Soit $\varphi$ la fonction de courant tel que :
 
@@ -305,7 +305,7 @@ On obtient:
 	\right)
 \end{align}
 
-De $\frac{\partial p}{\partial y} = 0$ qui nous dit que la pression ne dépend que de $x$ ($p = p(x)$) et l'équation de Bernouilli loin de la couche limite où la vitesse est contante et vaut $U$ on a:
+De $\frac{\partial p}{\partial y} = 0$ qui nous dit que la pression ne dépend que de $x$ ($p = p(x)$) et l'équation de Bernouilli loin de la couche limite où la vitesse est constante et vaut $U$ on a:
 
 
 \begin{equation*}
@@ -395,9 +395,9 @@ Avec les conditions aux limites:
 	\left.
 	\frac{d f}{d \eta} \right|_{\eta = \infty} &= 1
 \end{align}
-Les grandeurs que nous avons comparés expérimentalement provenant du résulat des équations de Blasius sont l'épaisseur de déplacement $\delta_{1}$, l'épaisseur de quantité de mouvement $\delta_{2}$ et le coefficient de frottement $C_{f}$
-\subsection{Epaisseur de déplacement}
-L'épaisseur de dépacement $\delta_{1}$ à $x$ fixé est défini à par:
+Les grandeurs que nous avons comparés expérimentalement provenant du résultat des équations de Blasius sont l'épaisseur de déplacement $\delta_{1}$, l'épaisseur de quantité de mouvement $\delta_{2}$ et le coefficient de frottement $C_{f}$
+\subsection{Épaisseur de déplacement}
+L'épaisseur de déplacement $\delta_{1}$ à $x$ fixé est défini à par:
 \begin{equation}
 	\delta_{1} = 
 	\int_{0}^{^\infty}
@@ -443,17 +443,51 @@ $ \lim_{\eta\to\infty}\left(\eta - f(\eta)\right)$ est évalué numériquement e
 \begin{equation}
 	\delta_{1}(x)	\approx \frac{1.72x}{Re_{x}}
 \end{equation}
-\subsection{Epaisseur de déplacement}
-L'épaisseur de dépacement $\delta_{2}$ est défini par:
+\subsection{Épaisseur de quantité de mouvement}
+L'épaisseur de quantité de mouvement $\delta_{2}$ à $x$ fixé est défini par:
 \begin{equation}
 	\delta_{2} = 
 	\int_{0}^{^\infty}
+	\frac{u}{U}
 	\left(
 	1 - 
 	\frac{u}{U}
 	\right)
-	\frac{u}{U}
 	dy
+\end{equation}
+\begin{align*}
+	\delta_{2} &= 
+	\int_{0}^{^\infty}
+	\frac{u}{U}
+	\left(
+	1 - 
+	\frac{u}{U}
+	\right)
+	dy\\
+	&= \int_{0}^{\infty}
+	\frac{df}{d\eta}
+	\left(
+	1 - \frac{df}{d\eta}
+	\right)
+	\frac{\partial y}{\partial \eta}d\eta\\
+	&= \sqrt{\frac{2\nu x}{U}}
+	\int_{0}^{\infty}
+	\frac{df}{d\eta}
+	\left(
+	1 - \frac{df}{d\eta}
+	\right)d\eta\\
+	&= x\sqrt{\frac{2}{Re_{x}}}
+	\int_{0}^{\infty}
+	\frac{df}{d\eta}
+	\left(
+	1 - \frac{df}{d\eta}
+	\right)d\eta
+\end{align*}
+$ \int_{0}^{\infty}
+\frac{df}{d\eta}
+\left(\eta - \frac{df}{d\eta}\right)d\eta$ est évalué numériquement et on trouve:
+\begin{equation}
+	\delta_{2}(x)	\approx \frac{0.664x}{Re_{x}}
 \end{equation}
 \subsection{Coefficient de frottement à la paroi}
 Le coefficient de frottement à la paroi $C_{f}$ à $x$ fixé est défini par:
@@ -492,7 +526,7 @@ $ \left. \frac{d^{2}f}{d\eta^{2}} \right|_{\eta = 0} $ est évalué numériqueme
 	C_{f}(x) \approx \frac{1.328}{Re_{x}}
 \end{equation}
 \subsection{Comparaisons avec nos expériences}
-Nous avons effectué nos mesures à l'aide de l'anénomètre à fil chaud et nous trouvons:
+Nous avons effectué nos mesures à l'aide de l'anémomètre à fil chaud et nous trouvons:
 %\begin{thebibliography}{}
 %\bibitem{RefJ}
 %% Format for Journal Reference
