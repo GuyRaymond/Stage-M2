@@ -3,11 +3,17 @@
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{babel}
-%\usepackage{mathtools} 
+\usepackage{graphicx}
 \usepackage{amsmath} 
 \begin{document}
  
 \section{Couche limite}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 0.6]{./image/crop_vitesse=28_volume=003.png}
+	\caption{Goutte d'eau de volume $0.03$ml}
+\end{figure}
 Notre goutte d'eau (de volume de l'ordre millilitre) est sur une paroi horizontale en présence d'un écoulement d'air.
 
 
@@ -395,7 +401,13 @@ Avec les conditions aux limites:
 	\left.
 	\frac{d f}{d \eta} \right|_{\eta = \infty} &= 1
 \end{align}
-Les grandeurs que nous avons comparés expérimentalement provenant du résultat des équations de Blasius sont l'épaisseur de déplacement $\delta_{1}$, l'épaisseur de quantité de mouvement $\delta_{2}$ et le coefficient de frottement $C_{f}$
+\newpage
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 0.6]{./image/Blasius.png}
+	\caption{Profil de Blasius}
+\end{figure}
+Les grandeurs que nous avons comparées expérimentalement provenant du résultat des équations de Blasius sont l'épaisseur de déplacement $\delta_{1}$, l'épaisseur de quantité de mouvement $\delta_{2}$ et le coefficient de frottement $C_{f}$
 \subsection{Épaisseur de déplacement}
 L'épaisseur de déplacement $\delta_{1}$ à $x$ fixé est défini à par:
 \begin{equation}
@@ -485,7 +497,7 @@ L'épaisseur de quantité de mouvement $\delta_{2}$ à $x$ fixé est défini par
 \end{align*}
 $ \int_{0}^{\infty}
 \frac{df}{d\eta}
-\left(\eta - \frac{df}{d\eta}\right)d\eta$ est évalué numériquement et on trouve:
+\left(1 - \frac{df}{d\eta}\right)d\eta$ est évalué numériquement et on trouve:
 \begin{equation}
 	\delta_{2}(x)	\approx \frac{0.664x}{Re_{x}}
 \end{equation}
@@ -526,7 +538,75 @@ $ \left. \frac{d^{2}f}{d\eta^{2}} \right|_{\eta = 0} $ est évalué numériqueme
 	C_{f}(x) \approx \frac{0.664}{Re_{x}}
 \end{equation}
 \subsection{Comparaisons avec nos expériences}
-Nous avons effectué nos mesures à l'aide de l'anémomètre à fil chaud et nous trouvons:
+Nous avons effectué nos mesures à l'aide de l'anémomètre à fil chaud et nous trouvons avec :
+\begin{align*}
+	x &= 0.55m\\
+	Re_{x} &= \frac{Ux}{\nu}\\
+	\nu &= 1.5e-5 m^{2}.s^{-1}~~\text{à}~~T = 25^{o}C; 
+\end{align*}
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{cc}
+		\hline\\
+		$U(m/s)$ & Reynolds\\
+		\hline
+   15 & 5.5000000e+05\\
+   20 & 7.3333333e+05\\
+   24 & 8.8000000e+05\\
+   28 & 1.0266667e+06
+	\end{tabular}
+	\caption{Nombre de Reynolds $Re_{x}$}
+\end{table}
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{cccc}
+		\hline\\
+		$U(m/s)$ & $\delta_{1Blasius}(m)$ &
+		$ \delta_{1Experience}(m)$ & 
+		 erreur relative\\
+		\hline
+		15   & 1.2708977e-03   & 1.2366791e-03   & 2.69\%\\
+		20   & 1.1077156e-03   & 1.1009662e-03   & 0.61\%\\
+		24   & 1.0253841e-03   & 9.9332014e-04   & 3.13\%\\
+		28   & 9.6219321e-04   & 9.4728404e-04   & 1.55\%
+	\end{tabular}
+	\caption{Comparaison épaisseur de déplacement $\delta_{1}$}
+\end{table}
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{cccc}
+		\hline\\
+		$U(m/s)$ & $\delta_{2Blasius}(m)$ &
+		$ \delta_{2Experience}(m)$ & 
+		 erreur relative\\
+		\hline
+   15 & 4.9062563e-04   & 4.7278049e-04   & 3.64\%\\
+   20 & 4.2762976e-04   & 4.0788245e-04   & 4.62\%\\
+   24 & 3.9584594e-04   & 3.7179338e-04   & 6.08\%\\
+   28 & 3.7145133e-04   & 3.4572931e-04   & 6.92\%
+	\end{tabular}
+	\caption{Comparaison épaisseur de quantité de mouvement $\delta_{2}$}
+\end{table}
+\begin{table}[ht]
+	\centering
+	\begin{tabular}{cccc}
+		\hline\\
+		$U(m/s)$ & $C_{fBlasius}$ &
+		$ C_{fExperience}$ & 
+		 erreur relative\\
+		\hline
+   15 & 8.9204661e-04   & 9.1781966e-04   & 2.89\%\\
+   20 & 7.7750866e-04   & 7.6736042e-04   & 1.31\%\\
+   24 & 7.1971988e-04   & 7.3306205e-04   & 1.85\%\\
+   28 & 6.7536606e-04   & 6.6688383e-04   & 1.26\%
+	\end{tabular}
+	\caption{Comparaison coefficient de frottement $C_{f}$}
+\end{table}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 0.6]{./image/Bla.png}
+	\caption{Profil de Blasius et expérimentaux}
+\end{figure}
 %\begin{thebibliography}{}
 %\bibitem{RefJ}
 %% Format for Journal Reference
