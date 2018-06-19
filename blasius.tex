@@ -17,7 +17,7 @@ La couche limite est cette région proche de la paroi où les effets visqueux ne
 
 C'est Prandtl qui fut le premier à définir la couche limite. 
 
-\subsection{Équation de la couche limite }
+\subsection{Équations de la couche limite }
 
 Les équations de la couche limite sont définies pour un écoulement bidimensionnel et nous nous les donnerons uniquement pour le cas d'un écoulement laminaire puisque nos écoulements étaient laminaires dans nos expériences.
 
@@ -223,7 +223,7 @@ Les équations de la couche limites sont donc :
 	\frac{\partial p}{\partial y} 
 	&= 0
 \end{align}
-\subsection{Equation de Blasius}
+\subsection{Equations de Blasius}
 L'équation de blasius est l'équation de la couche limite pour un écoulement laminaire sur une plaque plane dont la vitesse $U$ loin de la couche limite est constante et parallèle à l'axe $x$.
 
 Soit $\varphi$ la fonction de courant tel que :
@@ -247,7 +247,7 @@ On a:
 		-y\sqrt{\frac{U}{2\nu x}}\frac{1}{2x} &&= 
 		-\frac{\eta}{2x}\\
 		\frac{\partial \eta}{\partial y} &=
-		\sqrt{\frac{u}{2\nu x }} &&= \frac{\eta}{y}\\
+		\sqrt{\frac{U}{2\nu x }} &&= \frac{\eta}{y}\\
 		\frac{\partial^{2} \eta}{\partial y^{2}} &= 
 		\frac{\eta}{y^{2}} - \frac{\eta}{y^{2}} &&= 0
 \end{align*}
@@ -305,7 +305,7 @@ On obtient:
 	\right)
 \end{align}
 
-De $\frac{\partial p}{\partial y} = 0$ qui nous dit que la pression ne dépend que de $x$ ($p(x)$) et l'équation de Bernouilli loin de la limite où la vitesse est contante et vaut $U$ on a:
+De $\frac{\partial p}{\partial y} = 0$ qui nous dit que la pression ne dépend que de $x$ ($p = p(x)$) et l'équation de Bernouilli loin de la couche limite où la vitesse est contante et vaut $U$ on a:
 
 
 \begin{equation*}
@@ -395,9 +395,9 @@ Avec les conditions aux limites:
 	\left.
 	\frac{d f}{d \eta} \right|_{\eta = \infty} &= 1
 \end{align}
-Les grandeurs que nous avons vérifié expérimentalement provenant du résulat des équations de Blasius sont l'épaisseur de déplacement $\delta_{1}$, l'épaisseur de quantité de mouvement $\delta_{2}$ et le coefficient de frottement $C_{f}$
+Les grandeurs que nous avons comparés expérimentalement provenant du résulat des équations de Blasius sont l'épaisseur de déplacement $\delta_{1}$, l'épaisseur de quantité de mouvement $\delta_{2}$ et le coefficient de frottement $C_{f}$
 \subsection{Epaisseur de déplacement}
-L'épaisseur de dépacement $\delta_{1}$ est défini par:
+L'épaisseur de dépacement $\delta_{1}$ à $x$ fixé est défini à par:
 \begin{equation}
 	\delta_{1} = 
 	\int_{0}^{^\infty}
@@ -406,6 +406,42 @@ L'épaisseur de dépacement $\delta_{1}$ est défini par:
 	\frac{u}{U}
 	\right)
 	dy
+\end{equation}
+\begin{align*}
+	\delta_{1} &= 
+	\int_{0}^{^\infty}
+	\left(
+	1 - 
+	\frac{u}{U}
+	\right)
+	dy\\
+	&= \int_{0}^{\infty}
+	\left(
+	1 - \frac{df}{d\eta}
+	\right)
+	dy 
+	= \int_{0}^{\infty}
+	\left(
+	1 - \frac{df}{d\eta}
+	\right)
+	\frac{\partial y}{\partial \eta}d\eta\\
+	&= \sqrt{\frac{2\nu x}{U}}
+	\int_{0}^{\infty}
+	\left(
+	1 - \frac{df}{d\eta}
+	\right)
+	d\eta\\
+	&= x\sqrt{\frac{2}{Re_{x}}}
+	\left(
+	\lim_{\eta\to\infty}
+	\left(
+	\eta - f(\eta)
+	\right)
+	\right)
+\end{align*}
+$ \lim_{\eta\to\infty}\left(\eta - f(\eta)\right)$ est évalué numériquement et on trouve:
+\begin{equation}
+	\delta_{1}(x)	\approx \frac{1.72x}{Re_{x}}
 \end{equation}
 \subsection{Epaisseur de déplacement}
 L'épaisseur de dépacement $\delta_{2}$ est défini par:
@@ -420,14 +456,43 @@ L'épaisseur de dépacement $\delta_{2}$ est défini par:
 	dy
 \end{equation}
 \subsection{Coefficient de frottement à la paroi}
-Le coefficient de frottement à la paroi $C_{f}$ est défini par:
+Le coefficient de frottement à la paroi $C_{f}$ à $x$ fixé est défini par:
 \begin{equation}
-	C_{f} = 
-	\frac{2}{\rho U^{2}}
+	C_{f} =
+	\frac{2\tau_{y=0}}{\rho U^{2}} =
+	\frac{2\nu}{U^{2}}
 	\left.
 	\frac{\partial u}{\partial y}
 	\right|_{y = 0}
 \end{equation}
+\begin{align*}
+	C_{f} &= 
+	\frac{2\nu}{U^{2}}
+	\left.
+	\frac{\partial u}{\partial y}
+	\right|_{y = 0}
+	&&= \frac{2\nu}{U^{2}}
+	 U\sqrt{\frac{U}{2\nu x}}
+	\left.
+	\frac{d^{2}f}{d\eta^{2}}
+	\right|_{\eta = 0}\\
+	&= \frac{2\nu}{U}
+	 \sqrt{\frac{U}{2\nu x}}
+	\left.
+	\frac{d^{2}f}{d\eta^{2}}
+	\right|_{\eta = 0}
+	&&= 
+	 \sqrt{\frac{2}{Re_{x}}}
+	\left.
+	\frac{d^{2}f}{d\eta^{2}}
+	\right|_{\eta = 0}
+\end{align*}
+$ \left. \frac{d^{2}f}{d\eta^{2}} \right|_{\eta = 0} $ est évalué numériquement et on trouve:
+\begin{equation}
+	C_{f}(x) \approx \frac{1.328}{Re_{x}}
+\end{equation}
+\subsection{Comparaisons avec nos expériences}
+Nous avons effectué nos mesures à l'aide de l'anénomètre à fil chaud et nous trouvons:
 %\begin{thebibliography}{}
 %\bibitem{RefJ}
 %% Format for Journal Reference
