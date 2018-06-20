@@ -208,7 +208,7 @@ Ce qui donne l'ordre de grandeur de $\frac{1}{\rho}\frac{\partial p}{\partial y}
 	\right)
 \end{equation*}
 
-Du fait que $\frac{U^{2}}{L}$ soit l'ordre de grandeur des termes de l'équation de Navier-Stokes suivant $x$ et que $\frac{V^{2}}{\delta} << \frac{U^2}{L}$ on a aboutit à l'approximation:
+Du fait que $\frac{U^{2}}{L}$ soit l'ordre de grandeur des termes de l'équation de Navier-Stokes suivant $x$ et que $\frac{V^{2}}{\delta} << \frac{U^2}{L}$ on a abouti à l'approximation:
 \begin{equation*}
 	\frac{1}{\rho}\frac{\partial p}{\partial y} \approx 0
 \end{equation*}
@@ -311,7 +311,7 @@ On obtient:
 	\right)
 \end{align}
 
-De $\frac{\partial p}{\partial y} = 0$ qui nous dit que la pression ne dépend que de $x$ ($p = p(x)$) et l'équation de Bernouilli loin de la couche limite où la vitesse est constante et vaut $U$ on a:
+De $\frac{\partial p}{\partial y} = 0$ qui nous dit que la pression ne dépend que de $x$ ($p = p(x)$) et de l'équation de Bernouilli loin de la couche limite où la vitesse est constante et vaut $U$ on a:
 
 
 \begin{equation*}
@@ -409,7 +409,7 @@ Avec les conditions aux limites:
 \end{figure}
 Les grandeurs que nous avons comparées expérimentalement provenant du résultat des équations de Blasius sont l'épaisseur de déplacement $\delta_{1}$, l'épaisseur de quantité de mouvement $\delta_{2}$ et le coefficient de frottement $C_{f}$
 \subsection{Épaisseur de déplacement}
-L'épaisseur de déplacement $\delta_{1}$ à $x$ fixé est défini à par:
+L'épaisseur de déplacement $\delta_{1}$ à $x$ fixé est définie par:
 \begin{equation}
 	\delta_{1} = 
 	\int_{0}^{^\infty}
@@ -453,10 +453,10 @@ L'épaisseur de déplacement $\delta_{1}$ à $x$ fixé est défini à par:
 \end{align*}
 $ \lim_{\eta\to\infty}\left(\eta - f(\eta)\right)$ est évalué numériquement et on trouve:
 \begin{equation}
-	\delta_{1}(x)	\approx \frac{1.72x}{Re_{x}}
+	\delta_{1}(x)	\approx \frac{1.72x}{\sqrt{Re_{x}}}
 \end{equation}
 \subsection{Épaisseur de quantité de mouvement}
-L'épaisseur de quantité de mouvement $\delta_{2}$ à $x$ fixé est défini par:
+L'épaisseur de quantité de mouvement $\delta_{2}$ à $x$ fixé est définie par:
 \begin{equation}
 	\delta_{2} = 
 	\int_{0}^{^\infty}
@@ -499,7 +499,7 @@ $ \int_{0}^{\infty}
 \frac{df}{d\eta}
 \left(1 - \frac{df}{d\eta}\right)d\eta$ est évalué numériquement et on trouve:
 \begin{equation}
-	\delta_{2}(x)	\approx \frac{0.664x}{Re_{x}}
+	\delta_{2}(x)	\approx \frac{0.664x}{\sqrt{Re_{x}}}
 \end{equation}
 \subsection{Coefficient de frottement à la paroi}
 Le coefficient de frottement à la paroi $C_{f}$ à $x$ fixé est défini par:
@@ -535,7 +535,7 @@ Le coefficient de frottement à la paroi $C_{f}$ à $x$ fixé est défini par:
 \end{align*}
 $ \left. \frac{d^{2}f}{d\eta^{2}} \right|_{\eta = 0} $ est évalué numériquement et on trouve:
 \begin{equation}
-	C_{f}(x) \approx \frac{0.664}{Re_{x}}
+	C_{f}(x) \approx \frac{0.664}{\sqrt{Re_{x}}}
 \end{equation}
 \subsection{Comparaisons avec nos expériences}
 Nous avons effectué nos mesures à l'aide de l'anémomètre à fil chaud et nous trouvons avec :
