@@ -1,0 +1,89 @@
+\documentclass[french]{article}
+ 
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{caption}
+
+\begin{document}
+\section{Dispositif expérimental}
+Nous avions à notre dispostion pour effectuer nos mesures une soufferie, un capteur de pression
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 0.3]{./image/rondforces.jpeg}
+	\caption{Ligne triple}
+\end{figure}
+
+\section{Anémomètre à fil chaud}
+C'est l'anémomètre à fil chaud qui nous a permis de déterminer les profils de la couche limite dans notre.
+
+Le principe de l'anénomètre à fil chaud est de placer un fil chaud dans l'écoulement et de mainternir sa température constante
+
+l'écoulement retirera une énergie au fil chaud et pour maintenir sa température constante du fil chaud, on lui fournit une certaine énergie
+
+Le substrat est le nom donné au support (solide ou liquide) sur lequel la goutte de liquide repose.
+
+Lorsqu'une goutte d'eau est posée sur support solide, il y a formation de 3 interfaces et donc de 3 tensions de surface.
+
+
+En projetant les tensions de surface sur l'horizontale on obtient :
+
+\begin{equation}
+	\label{eq:Young}
+	\gamma_{SV}  = \gamma_{SL} + \gamma_{LV}\cos\theta_{E}
+\end{equation}
+
+C'est la loi de Young.
+
+\section{Hystérésis}
+
+
+Dans la réalité l'angle statique $\theta_{E}$ n'est pas unique et on a :
+
+
+\begin{equation}
+	\theta_{E,r} <= \theta_{E} <= \theta_{E,a}
+\end{equation}
+
+Lorsque l'angle de contact $\theta$ vérifie $\theta < \theta_{E,r}$, la goutte se met à reculer et l'angle de contact $\theta$ à l'arrière de la goutte est appelé $\theta_{r}$.\\
+
+Lorsque l'angle de contact $\theta$ vérifie $\theta_{E,a} < \theta$, la goutte se met à avancer et l'angle de contact $\theta$ à l'avant de la goutte est appelé $\theta_{r}$.\\
+
+Dans le cas d'un surface parfaite $\theta_{a}$ et $\theta_{r}$ sont égaux.\\
+
+L'hystéréris (en parlant d'angle de contact) est la différence $\theta_{a}-\theta_{r}$ puisque $\theta_{a}$ et $\theta_{r}$ ne sont égaux en pratique.
+
+\section{Modèles d'angle dynamique}
+
+L'angle de contact de la goutte en mouvement (l'angle dynamique) est différent de l'angle de contact quand la goutte es équilibre (angle statique).
+
+
+
+Les grandeurs que nous avançons mesurées expérimantalement en prenant les photos d'une goutte d'eau dans la soufflerie sont l'angle avant $\theta_{a}$, l'angle arrière et 
+
+
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 0.6]{./image/crop_tvitesse=28_volume=003.png}
+	\caption{Goutte d'eau de volume $0.03$ml avec $\theta_{a} = 45^{o}$ et $\theta_{r} = 50.17^{o}$}
+\end{figure}
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 1]{./image/rrgou2.png}
+	\caption{Paramètres mesurés}
+\end{figure}
+
+\begin{itemize}
+\item $U$ vitesse de la goutte, $\theta(U)$?
+\item Le nombre capillaire : $C_{a} = \frac{\text{effets visqueux}}{\text{effets capillaires}} = \frac{\eta U}{\gamma}$
+\item De Gennes : $ \theta \left(\theta^{2} - \theta_{s}^{2}\right) = \pm 6\ln\left(\frac{b}{a}\right)C_{a}$
+\item Cox et Voinov : $\theta^{3} - \theta_{s}^{3} = \pm 9\ln\left(\frac{b}{a}\right) C_{a}$
+\item Cinétique moléculaire: $\left(\theta^{2} - \theta_{s}^{2}\right) = \frac{\nu NkT}{2\pi fL_{m}h}C_{a}$
+\item Linéaire : $\theta - \theta_{s} \propto \pm U$
+\end{itemize}
+
+\end{document}
