@@ -31,6 +31,7 @@ mask2 = poly2mask(x2, y2, yc,xc);
 seuil = 1000;
 dth = 0.5; % precision en degre de l ange entre 2 droites
 n = 1; % degre du polynome d interpolation
+minpoints = max(10,n+1);
 t = 0;
 for n_start = 1:Stack_length
     Ibw=imread(Stack_name,n_start);
@@ -40,7 +41,7 @@ for n_start = 1:Stack_length
     Ibw2 = traitement(Ibw2,seuil,mask2);
     [c1,d1] = frontiere(Ibw);
     [c2,d2] = frontiere(Ibw2);
-    if (3 < length(c1) && 3 < length(c2))
+    if (minpoints < length(c1) && minpoints < length(c2))
         c1 = c1(1:end-1);
         d1 = d1(1:end-1);
         while d1(1) < d1(end)
@@ -54,7 +55,7 @@ for n_start = 1:Stack_length
             dist(k) = hypot(c1(k)-xk,d1(k)-yk);
         end
         [~,k]  = min(dist);
-        if 1 < k
+        if  minpoints < k
             u = c1(1:k);
             v = d1(1:k);
             [m1,~,found1] = gpente(u,-v,1,n,dth);

@@ -21,7 +21,7 @@ end
 i = 0;
 for j = 1:lenfiles
     [~,name,~] = fileparts(files(j).name);
-    if isempty(strfind(name,'@'))
+    if ~contains(name,'@')
         i = i+1;
         tab = strsplit(name,{'=','_'});
         t = 0;

@@ -1,11 +1,16 @@
-function sauvegarder(dossierousauver,Stack_name)
+
+clear all
+close all
+clc
+Stack_name1 = '/mnt/shared/projects/BlowDrop/Shared/Stage_GUY/Debit/debit=0.25_volume=0.06_pression=365_temperature=22.7.tif';
+Stack_name = '/mnt/shared/projects/BlowDrop/Shared/Stage_GUY/Vitesse/vitesse=28_volume=0.002_pression=473_temperature=23.9.tif';
 
 Stack_info=imfinfo(Stack_name);
 Stack_length=size(Stack_info,1); % nombre d'image du stack
 
-[~,filename,~] = fileparts(Stack_name);
-filename = strcat(filename,'.mat');
-filename = fullfile(dossierousauver,filename);
+% [~,filename,~] = fileparts(Stack_name);
+% filename = strcat(filename,'.mat');
+% filename = fullfile(dossierousauver,filename);
 
 theta_a = zeros(Stack_length,1);
 theta_r = zeros(Stack_length,1);
@@ -34,6 +39,7 @@ n = 1; % degre du polynome d interpolation
 minpoints = max(10,n+1);
 t = 0;
 for n_start = 1:Stack_length
+    n_start 
     Ibw=imread(Stack_name,n_start);
     Ibw = abs(double(Ibw)- I1);
     Ibw2 = fliplr(Ibw);
@@ -65,6 +71,7 @@ for n_start = 1:Stack_length
             [u2,v2] = droite(u(1),u(end),-v(end),m2,false);
             v2 = -v2;
             if (found1 && found2)
+                n_start 
 	            t = t+1;
                 theta_a(t) = gangle(m1,true);
                 theta_r(t) = gangle(m2,false);
@@ -88,17 +95,17 @@ for n_start = 1:Stack_length
     end
 end
 if 0 < t
-    theta_a = theta_a(1:t);
-    theta_r = theta_r(1:t);
-    x_a = x_a(1:t); 
-    y_a = y_a(1:t);
-    x_r = x_r(1:t);
-    y_r = y_r(1:t);
-    y_max = y_max(1:t);
-    x_y_max = x_y_max(1:t);
-    dist_a_r = dist_a_r(1:t);
-    numero_image = numero_image(1:t);
-    save(filename, 'theta_a', 'theta_r', 'x_a','y_a','x_r','y_r','y_max','x_y_max','dist_a_r',...
-    'numero_image','u_c','v_c','u_t_a','v_t_a','u_t_r','v_t_r')
-end
+    t
+%     theta_a = theta_a(1:t);
+%     theta_r = theta_r(1:t);
+%     x_a = x_a(1:t); 
+%     y_a = y_a(1:t);
+%     x_r = x_r(1:t);
+%     y_r = y_r(1:t);
+%     y_max = y_max(1:t);
+%     x_y_max = x_y_max(1:t);
+%     dist_a_r = dist_a_r(1:t);
+%     numero_image = numero_image(1:t);
+%     save(filename, 'theta_a', 'theta_r', 'x_a','y_a','x_r','y_r','y_max','x_y_max','dist_a_r',...
+%     'numero_image','u_c','v_c','u_t_a','v_t_a','u_t_r','v_t_r')
 end

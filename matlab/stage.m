@@ -15,9 +15,9 @@ dth = 0.5; %precision sur l'angle
 
 [m1,npts,found] = gpente(u,v,1,n,dth);
 
-[u1,v1] = droite(u(1),u(end),v(1),m1,true);
-[m2,npts,found] = gpente(u,v,length(u),n,dth)
-[u2,v2] = droite(u(1),u(end),v(end),m2,false);
+[u1,v1] = droite2(u(1),u(end),v(1),m1,true);
+[m2,npts,found] = gpente(u,v,length(u),n,dth);
+[u2,v2] = droite2(u(1),u(end),v(end),m2,false);
 o1 = gangle(m1,true);
 o2 = gangle(m2,false);
 end
