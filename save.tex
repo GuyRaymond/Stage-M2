@@ -16,13 +16,13 @@
 
 Nous avions à notre dispostion pour effectuer nos mesures : une soufferie, un capteur de pression pouvant aller jusqu'à $500Pa$, un capteur de température, d'une surface ayant un petit trou par où la goutte est injectée par en dessous, une séringue de capacité $5ml$, d'un injecteur qui contrôle le volume de la goûtte à injecter, d'un écran laser pour bien visualiser notre goutte et d'un ordinateur pour observer les images prises par la caméra.
 
-\begin{figure}[hb]
+\begin{figure}[!hb]
 \centering
 	\includegraphics[width = 0.4\linewidth]{./image/Surface.jpg}
 	\caption{Camera, surface et écran à laser}
 	\label{fig:Plan}
 \end{figure}
-\begin{figure}[hb]
+\begin{figure}[!hb]
 \centering
 	\includegraphics[width = 0.5\linewidth]{./image/Ecran.jpg}
 	\caption{Ecran d'observation}
@@ -40,12 +40,12 @@ l'écoulement retirera une énergie au fil chaud et pour maintenir la températu
 
 \section{Paramètres mesurés}
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 1]{./image/rrgou2.png}
 	\caption{Paramètres mesurés}
 \end{figure}
-\begin{figure}[ht]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 0.5]{./image/crop_tvitesse=28_volume=003.png}
 	\caption{Goutte d'eau de volume $0.03$ml avec: \\$U = 0$, $\theta_{a} = \ang{45}$, $\theta_{r} = \ang{50.17}$, $x_{1} = 14.66mm$, $x_{2} = 6.77mm$,\\ $d = 7.89mm$, $h = 4.86mm$ et $x_{h} = 48$}
@@ -91,22 +91,22 @@ Ensuite nous injections d'abord la goutte d'eau de volume désiré et c'est par 
 Dans ce cas la vitesse de la soufflerie prends relativement court à se stabiliser donc nous n'avons pas la vitesse désirée toute suite.\\
 
 C'est dernière méthode où le débit n'était pas un paramètre important que présenterons davantage les résultats et nous ferons un comparatif lorsque le début jouait un rôle important.
-
+\newpage
 \section{Résultat}
 
 Nous présentons les résultats obtenus après l'extraction de nos paramètres et nous en ferons une analyse.
 
-\begin{figure}[htp]
+\begin{figure}[!h]
     \centering
-	\subfloat[$x_{a}$, $x_{r}$, $d$]{
-	\includegraphics[clip,width = 0.4\linewidth]{./image/v=24_vol=004_xaxrd.jpg}
+	\includegraphics[width = \linewidth]{./image/v=24_vol=004_xaxrd.jpg}
 
-    } 
-	\subfloat[$\theta_{a}$, $\theta_{r}$]{
-	\includegraphics[clip,width = 0.4\linewidth]{./image/v=24_vol=004_oaor.jpg}
-    }
+     
+	\includegraphics[width = \linewidth]{./image/v=24_vol=004_oaor.jpg}
+    
 	\caption{$U_{\infty}=24m.s^{-1}$, volume =$0.04ml$}
 \end{figure}
+
+Nous pouvons constater sur la figure ci-dessus que l'
 
 \subsection{Angle de contact avant $\theta_{a}$}
 
@@ -114,17 +114,17 @@ Nous avions pu constater lors de nos expériences que l'angle d'avancé augmenta
 
 Il y avait aussi des oscillations rapides autour d'un certaine position avant que la goutte avance de nouveau (le point avant avançait puis reculait) et c'est que doit traduire cette oscillation d'angle tout en augmentant globalement.
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=20oa_2.jpg}
 	\caption{Angle à l'avant $\theta_{a}$, $U_{\infty}=20m.s^{-1}$}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=24oa_2.jpg}
 	\caption{Angle à l'avant $\theta_{a}$, $U_{\infty}=24m.s^{-1}$}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=28oa_2.jpg}
 	\caption{$\theta_{a}$, $U_{\infty}=28m.s^{-1}$}
@@ -135,17 +135,17 @@ Il y avait aussi des oscillations rapides autour d'un certaine position avant qu
 
 Nous avions aussi constaté lors de nos expériences que l'angle arrière $\theta_{r}$ dimininuait (avec des oscillations) globalement au cours du temps, ce que semble indiquer les figures.\\
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=20or_2.jpg}
 	\caption{$\theta_{r}$, $U_{\infty}=20m.s^{-1}$}
 \end{figure}
-\begin{figure}[hb]
+\begin{figure}[!hb]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=24or_2.jpg}
 	\caption{$\theta_{r}$, $U_{\infty}=24m.s^{-1}$}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=28or_2.jpg}
 	\caption{$\theta_{r}$, $U_{\infty}=28m.s^{-1}$}
@@ -153,34 +153,34 @@ Nous avions aussi constaté lors de nos expériences que l'angle arrière $\thet
 
 
 \subsection{Longueur $d$ entre le point avant et arrière}
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=20d.jpg}
 	\caption{$d$, $U_{\infty}=20m.s^{-1}$}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=24d.jpg}
 	\caption{$d$, $U_{\infty}=24m.s^{-1}$}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=28d.jpg}
 	\caption{$d$, $U_{\infty}=28m.s^{-1}$}
 \end{figure}
 
 \subsection{Hauteur maximale $h$}
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=20ym.jpg}
 	\caption{$h$, $U_{\infty}=20m.s^{-1}$}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=24ym.jpg}
 	\caption{$h$, $U_{\infty}=24m.s^{-1}$}
 \end{figure}
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=28ym.jpg}
 	\caption{Hauteur maximale $h$, $U_{\infty}=28m.s^{-1}$}
@@ -188,20 +188,20 @@ Nous avions aussi constaté lors de nos expériences que l'angle arrière $\thet
 
 \subsection{Position de la hauteur maximale $x_{h}$}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=20xm.jpg}
 	\caption{Position de la hauteur maximale en $x_{h}$, $U_{\infty}=20m.s^{-1}$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=24xm.jpg}
 	\caption{Position de la hauteur maximale en $x_{h}$, $U_{\infty}=24m.s^{-1}$}
 \end{figure}
 
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
 	\includegraphics[width = \linewidth]{./image/v=28xm.jpg}
 	\caption{Position de la hauteur maximale $x_{h}$ $U_{\infty}=28m.s^{-1}$}

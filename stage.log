@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.12.6)  26 JUN 2018 09:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.12.6)  27 JUN 2018 05:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -943,44 +943,84 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+(c:/texlive/2016/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(c:/texlive/2016/texmf-dist/tex/latex/subfloat/subfloat.sty
+Package: subfloat 2003/08/21 version 2.14
+
+Package `subfloat', Version 2.14 of 2003/08/21.
+
+Package subfloat Warning: Numbers of floats not counted:
+(subfloat)                If you use one of the counters subfloatfiguremax or
+(subfloat)                subfloattablemax you will get strange error messages
+(subfloat)                containing \c@subfloatfiguremax or
+(subfloat)                \c@subfloattablemax:
+(subfloat)                Please switch on countmax or remove the code using
+(subfloat)                the counter then..
+
+) (c:/texlive/2016/texmf-dist/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count153
+\sf@farskip=\skip65
+\sf@captopadj=\dimen169
+\sf@capskip=\skip66
+\sf@nearskip=\skip67
+\sf@top=\skip68
+\sf@bottom=\skip69
 ) (./stage.aux)
 \openout1 = `stage.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 16.
 
 (c:/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Info: Redefining \degres on input line 13.
-LaTeX Info: Redefining \dots on input line 13.
-LaTeX Info: Redefining \up on input line 13.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Info: Redefining \degres on input line 16.
+LaTeX Info: Redefining \dots on input line 16.
+LaTeX Info: Redefining \up on input line 16.
 
 (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count153
-\scratchdimen=\dimen169
+\scratchcounter=\count154
+\scratchdimen=\dimen170
 \scratchbox=\box51
-\nofMPsegments=\count154
-\nofMParguments=\count155
+\nofMPsegments=\count155
+\nofMParguments=\count156
 \everyMPshowfont=\toks24
-\MPscratchCnt=\count156
-\MPscratchDim=\dimen170
-\MPnumerator=\count157
-\makeMPintoPDFobject=\count158
+\MPscratchCnt=\count157
+\MPscratchDim=\dimen171
+\MPnumerator=\count158
+\makeMPintoPDFobject=\count159
 \everyMPtoPDFconversion=\toks25
 ) (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2016/05/10 v0.21 Utility functions of pdfTeX for LuaTeX (HO
@@ -1030,6 +1070,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 (c:/texlive/2016/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-
@@ -1043,20 +1084,20 @@ Dictionary: translator-basic-dictionary, Language: French
 (c:/texlive/2016/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2016/03/01 v2.6q siunitx: Abbreviated units
 )
-\c__siunitx_mathsf_int=\count159
-\c__siunitx_mathtt_int=\count160
+\c__siunitx_mathsf_int=\count160
+\c__siunitx_mathtt_int=\count161
 
 <./image/Surface.jpg, id=1, 2784.4025pt x 3583.3875pt>
 File: ./image/Surface.jpg Graphic file (type jpg)
 
 <use ./image/Surface.jpg>
-Package pdftex.def Info: ./image/Surface.jpg used on input line 21.
+Package pdftex.def Info: ./image/Surface.jpg used on input line 23.
 (pdftex.def)             Requested size: 137.9979pt x 177.59421pt.
  <./image/Ecran.jpg, id=2, 3131.7pt x 2573.615pt>
 File: ./image/Ecran.jpg Graphic file (type jpg)
 
 <use ./image/Ecran.jpg>
-Package pdftex.def Info: ./image/Ecran.jpg used on input line 27.
+Package pdftex.def Info: ./image/Ecran.jpg used on input line 29.
 (pdftex.def)             Requested size: 172.5pt x 141.72598pt.
  [1
 
@@ -1065,10 +1106,10 @@ Package pdftex.def Info: ./image/Ecran.jpg used on input line 27.
 <./image/rrgou2.png, id=13, 356.33125pt x 178.6675pt>
 File: ./image/rrgou2.png Graphic file (type png)
  <use ./image/rrgou2.png>
-Package pdftex.def Info: ./image/rrgou2.png used on input line 46.
+Package pdftex.def Info: ./image/rrgou2.png used on input line 47.
 (pdftex.def)             Requested size: 356.33037pt x 178.66705pt.
 
-Overfull \hbox (11.33037pt too wide) in paragraph at lines 46--47
+Overfull \hbox (11.33037pt too wide) in paragraph at lines 47--48
  [][] 
  []
 
@@ -1077,14 +1118,14 @@ File: ./image/crop_tvitesse=28_volume=003.png Graphic file (type png)
 
 <use ./image/crop_tvitesse=28_volume=003.png>
 Package pdftex.def Info: ./image/crop_tvitesse=28_volume=003.png used on input 
-line 51.
+line 52.
 (pdftex.def)             Requested size: 159.59586pt x 117.94034pt.
- [2 <./image/rrgou2.png>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 63--64
 
  []
 
-
+[2 <./image/rrgou2.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
@@ -1094,236 +1135,230 @@ Underfull \hbox (badness 10000) in paragraph at lines 69--70
 
  []
 
-[3 <./image/crop_tvitesse=28_volume=003.png (PNG copy)>] [4]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+[3 <./image/crop_tvitesse=28_volume=003.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 90--91
+Underfull \hbox (badness 10000) in paragraph at lines 89--90
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
 
  []
 
-[5] <./image/v=20oa_1.jpg, id=33, 1664.2175pt x 857.2025pt>
-File: ./image/v=20oa_1.jpg Graphic file (type jpg)
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 99--101
 
-<use ./image/v=20oa_1.jpg>
-Package pdftex.def Info: ./image/v=20oa_1.jpg used on input line 106.
-(pdftex.def)             Requested size: 345.0pt x 177.7027pt.
+ []
 
-<./image/v=20oa_2.jpg, id=34, 1778.645pt x 851.18pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--109
+
+ []
+
+[5] <./image/v=24_vol=004_xaxrd.jpg, id=33, 1543.7675pt x 763.85374pt>
+File: ./image/v=24_vol=004_xaxrd.jpg Graphic file (type jpg)
+
+<use ./image/v=24_vol=004_xaxrd.jpg>
+Package pdftex.def Info: ./image/v=24_vol=004_xaxrd.jpg used on input line 116.
+
+(pdftex.def)             Requested size: 327.74895pt x 162.16234pt.
+
+<./image/v=24_vol=004_oaor.jpg, id=34, 1594.95876pt x 843.15pt>
+File: ./image/v=24_vol=004_oaor.jpg Graphic file (type jpg)
+
+<use ./image/v=24_vol=004_oaor.jpg>
+Package pdftex.def Info: ./image/v=24_vol=004_oaor.jpg used on input line 123.
+(pdftex.def)             Requested size: 327.74895pt x 173.25856pt.
+ [6 <./image/v=24_vol=004_xaxrd.jpg> <./image/v=24_vol=004_oaor.jpg>]
+<./image/v=20xm.jpg, id=39, 1544.77126pt x 743.77875pt>
+File: ./image/v=20xm.jpg Graphic file (type jpg)
+
+<use ./image/v=20xm.jpg>
+Package pdftex.def Info: ./image/v=20xm.jpg used on input line 142.
+(pdftex.def)             Requested size: 327.74895pt x 157.79837pt.
+
+<./image/v=20ym.jpg, id=40, 1536.74126pt x 909.3975pt>
+File: ./image/v=20ym.jpg Graphic file (type jpg)
+
+<use ./image/v=20ym.jpg>
+Package pdftex.def Info: ./image/v=20ym.jpg used on input line 147.
+(pdftex.def)             Requested size: 327.74895pt x 193.94864pt.
+
+<./image/v=20d.jpg, id=41, 1781.65625pt x 916.42375pt>
+File: ./image/v=20d.jpg Graphic file (type jpg)
+ <use ./image/v=20d.jpg>
+Package pdftex.def Info: ./image/v=20d.jpg used on input line 154.
+(pdftex.def)             Requested size: 327.74895pt x 168.58485pt.
+
+<./image/v=20oa_2.jpg, id=42, 1778.645pt x 851.18pt>
 File: ./image/v=20oa_2.jpg Graphic file (type jpg)
 
 <use ./image/v=20oa_2.jpg>
-Package pdftex.def Info: ./image/v=20oa_2.jpg used on input line 111.
-(pdftex.def)             Requested size: 345.0pt x 165.10274pt.
+Package pdftex.def Info: ./image/v=20oa_2.jpg used on input line 158.
+(pdftex.def)             Requested size: 327.74895pt x 156.8424pt.
 
-<./image/v=24oa_1.jpg, id=35, 1468.48625pt x 764.8575pt>
-File: ./image/v=24oa_1.jpg Graphic file (type jpg)
-
-<use ./image/v=24oa_1.jpg>
-Package pdftex.def Info: ./image/v=24oa_1.jpg used on input line 116.
-(pdftex.def)             Requested size: 345.0pt x 179.68318pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./image/v=24oa_2.jpg, id=36, 1505.625pt x 944.52875pt>
-File: ./image/v=24oa_2.jpg Graphic file (type jpg)
-
-<use ./image/v=24oa_2.jpg>
-Package pdftex.def Info: ./image/v=24oa_2.jpg used on input line 121.
-(pdftex.def)             Requested size: 345.0pt x 216.42995pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./image/v=28oa_1.jpg, id=37, 1674.255pt x 824.07875pt>
-File: ./image/v=28oa_1.jpg Graphic file (type jpg)
-
-<use ./image/v=28oa_1.jpg>
-Package pdftex.def Info: ./image/v=28oa_1.jpg used on input line 126.
-(pdftex.def)             Requested size: 345.0pt x 169.80487pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./image/v=28oa_2.jpg, id=38, 1719.42375pt x 782.925pt>
-File: ./image/v=28oa_2.jpg Graphic file (type jpg)
-
-<use ./image/v=28oa_2.jpg>
-Package pdftex.def Info: ./image/v=28oa_2.jpg used on input line 131.
-(pdftex.def)             Requested size: 345.0pt x 157.08397pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 135--136
-
- []
-
-[6 <./image/v=20oa_1.jpg> <./image/v=20oa_2.jpg>] [7 <./image/v=24oa_1.jpg>]
-<./image/v=20or_1.jpg, id=47, 1542.76375pt x 882.29625pt>
-File: ./image/v=20or_1.jpg Graphic file (type jpg)
-
-<use ./image/v=20or_1.jpg>
-Package pdftex.def Info: ./image/v=20or_1.jpg used on input line 143.
-(pdftex.def)             Requested size: 345.0pt x 197.29645pt.
-
-<./image/v=20or_2.jpg, id=48, 1644.1425pt x 910.40125pt>
+<./image/v=20or_2.jpg, id=43, 1644.1425pt x 910.40125pt>
 File: ./image/v=20or_2.jpg Graphic file (type jpg)
 
 <use ./image/v=20or_2.jpg>
-Package pdftex.def Info: ./image/v=20or_2.jpg used on input line 148.
-(pdftex.def)             Requested size: 345.0pt x 191.0232pt.
+Package pdftex.def Info: ./image/v=20or_2.jpg used on input line 162.
+(pdftex.def)             Requested size: 327.74895pt x 181.47968pt.
 
-<./image/v=24or_1.jpg, id=49, 1456.44125pt x 877.2775pt>
-File: ./image/v=24or_1.jpg Graphic file (type jpg)
-
-<use ./image/v=24or_1.jpg>
-Package pdftex.def Info: ./image/v=24or_1.jpg used on input line 153.
-(pdftex.def)             Requested size: 345.0pt x 207.80673pt.
+Underfull \hbox (badness 10000) in paragraph at lines 153--165
+[]$[]$
+ []
 
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 153--165
+[]$
+ []
 
-<./image/v=24or_2.jpg, id=50, 1581.91pt x 966.61125pt>
+
+LaTeX Warning: Float too large for page by 24.90694pt on input line 165.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./image/v=24xm.jpg, id=44, 1532.72626pt x 724.7075pt>
+File: ./image/v=24xm.jpg Graphic file (type jpg)
+
+<use ./image/v=24xm.jpg>
+Package pdftex.def Info: ./image/v=24xm.jpg used on input line 173.
+(pdftex.def)             Requested size: 327.74895pt x 154.9576pt.
+ <./image/v=24ym.jpg, id=45, 1324.95pt x 628.3475pt>
+File: ./image/v=24ym.jpg Graphic file (type jpg)
+
+<use ./image/v=24ym.jpg>
+Package pdftex.def Info: ./image/v=24ym.jpg used on input line 177.
+(pdftex.def)             Requested size: 327.74895pt x 155.4278pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./image/v=24d.jpg, id=46, 1328.965pt x 934.49126pt>
+File: ./image/v=24d.jpg Graphic file (type jpg)
+ <use ./image/v=24d.jpg>
+Package pdftex.def Info: ./image/v=24d.jpg used on input line 183.
+(pdftex.def)             Requested size: 327.74895pt x 230.4567pt.
+
+<./image/v=24oa_2.jpg, id=47, 1505.625pt x 944.52875pt>
+File: ./image/v=24oa_2.jpg Graphic file (type jpg)
+
+<use ./image/v=24oa_2.jpg>
+Package pdftex.def Info: ./image/v=24oa_2.jpg used on input line 187.
+(pdftex.def)             Requested size: 327.74895pt x 205.6063pt.
+
+<./image/v=24or_2.jpg, id=48, 1581.91pt x 966.61125pt>
 File: ./image/v=24or_2.jpg Graphic file (type jpg)
 
 <use ./image/v=24or_2.jpg>
-Package pdftex.def Info: ./image/v=24or_2.jpg used on input line 158.
-(pdftex.def)             Requested size: 345.0pt x 210.81148pt.
+Package pdftex.def Info: ./image/v=24or_2.jpg used on input line 191.
+(pdftex.def)             Requested size: 327.74895pt x 200.26573pt.
 
-<./image/v=28or_1.jpg, id=51, 1498.59875pt x 845.1575pt>
-File: ./image/v=28or_1.jpg Graphic file (type jpg)
+Underfull \hbox (badness 10000) in paragraph at lines 182--194
+[]$[]$
+ []
 
-<use ./image/v=28or_1.jpg>
-Package pdftex.def Info: ./image/v=28or_1.jpg used on input line 163.
-(pdftex.def)             Requested size: 345.0pt x 194.56268pt.
 
-<./image/v=28or_2.jpg, id=52, 1701.35625pt x 853.1875pt>
+Underfull \hbox (badness 10000) in paragraph at lines 182--194
+[]$
+ []
+
+
+LaTeX Warning: Float too large for page by 154.32872pt on input line 194.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./image/v=28xm.jpg, id=49, 1475.5125pt x 833.1125pt>
+File: ./image/v=28xm.jpg Graphic file (type jpg)
+ <use ./image/v=28xm.jpg>
+Package pdftex.def Info: ./image/v=28xm.jpg used on input line 201.
+(pdftex.def)             Requested size: 327.74895pt x 185.05232pt.
+
+<./image/v=28ym.jpg, id=50, 1822.81pt x 723.70375pt>
+File: ./image/v=28ym.jpg Graphic file (type jpg)
+ <use ./image/v=28ym.jpg>
+Package pdftex.def Info: ./image/v=28ym.jpg used on input line 205.
+(pdftex.def)             Requested size: 327.74895pt x 130.1175pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<./image/v=28d.jpg, id=51, 1652.1725pt x 845.1575pt>
+File: ./image/v=28d.jpg Graphic file (type jpg)
+ <use ./image/v=28d.jpg>
+Package pdftex.def Info: ./image/v=28d.jpg used on input line 211.
+(pdftex.def)             Requested size: 327.74895pt x 167.64862pt.
+
+<./image/v=28oa_2.jpg, id=52, 1719.42375pt x 782.925pt>
+File: ./image/v=28oa_2.jpg Graphic file (type jpg)
+
+<use ./image/v=28oa_2.jpg>
+Package pdftex.def Info: ./image/v=28oa_2.jpg used on input line 215.
+(pdftex.def)             Requested size: 327.74895pt x 149.23515pt.
+
+<./image/v=28or_2.jpg, id=53, 1701.35625pt x 853.1875pt>
 File: ./image/v=28or_2.jpg Graphic file (type jpg)
 
 <use ./image/v=28or_2.jpg>
-Package pdftex.def Info: ./image/v=28or_2.jpg used on input line 168.
-(pdftex.def)             Requested size: 345.0pt x 173.00386pt.
+Package pdftex.def Info: ./image/v=28or_2.jpg used on input line 219.
+(pdftex.def)             Requested size: 327.74895pt x 164.3465pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8 <./image/v=24oa_2.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 174--175
-
+Underfull \hbox (badness 10000) in paragraph at lines 210--222
+[]$[]$
  []
 
-<./image/v=20xa.jpg, id=56, 1621.05624pt x 892.33376pt>
-File: ./image/v=20xa.jpg Graphic file (type jpg)
 
-<use ./image/v=20xa.jpg>
-Package pdftex.def Info: ./image/v=20xa.jpg used on input line 180.
-(pdftex.def)             Requested size: 345.0pt x 189.90094pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./image/v=24xa.jpg, id=57, 1643.13875pt x 899.36pt>
-File: ./image/v=24xa.jpg Graphic file (type jpg)
- <use ./image/v=24xa.jpg>
-Package pdftex.def Info: ./image/v=24xa.jpg used on input line 185.
-(pdftex.def)             Requested size: 345.0pt x 188.83pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./image/v=28xa.jpg, id=58, 1560.83125pt x 805.0075pt>
-File: ./image/v=28xa.jpg Graphic file (type jpg)
-
-<use ./image/v=28xa.jpg>
-Package pdftex.def Info: ./image/v=28xa.jpg used on input line 190.
-(pdftex.def)             Requested size: 345.0pt x 177.92519pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 194--195
-
+Underfull \hbox (badness 10000) in paragraph at lines 210--222
+[]$
  []
 
-[9 <./image/v=28oa_1.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
 
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<./image/v=20xr.jpg, id=62, 1470.49374pt x 727.71875pt>
-File: ./image/v=20xr.jpg Graphic file (type jpg)
-
-<use ./image/v=20xr.jpg>
-Package pdftex.def Info: ./image/v=20xr.jpg used on input line 206.
-(pdftex.def)             Requested size: 345.0pt x 170.72522pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<./image/v=24xr.jpg, id=63, 1657.19125pt x 926.46124pt>
-File: ./image/v=24xr.jpg Graphic file (type jpg)
-
-<use ./image/v=24xr.jpg>
-Package pdftex.def Info: ./image/v=24xr.jpg used on input line 211.
-(pdftex.def)             Requested size: 345.0pt x 192.8662pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10 <./image/v=28oa_2.jpg>]
-<./image/v=28xr.jpg, id=67, 1524.69624pt x 776.9025pt>
-File: ./image/v=28xr.jpg Graphic file (type jpg)
-
-<use ./image/v=28xr.jpg>
-Package pdftex.def Info: ./image/v=28xr.jpg used on input line 217.
-(pdftex.def)             Requested size: 345.0pt x 175.79129pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 221--222
-
- []
-
-[11 <./image/v=20or_1.jpg>] [12 <./image/v=20or_2.jpg> <./image/v=24or_1.jpg>]
-[13 <./image/v=24or_2.jpg> <./image/v=28or_1.jpg>] [14 <./image/v=28or_2.jpg> <
-./image/v=20xa.jpg>] [15 <./image/v=24xa.jpg> <./image/v=28xa.jpg>] [16 <./imag
-e/v=20xr.jpg> <./image/v=24xr.jpg>] [17 <./image/v=28xr.jpg>] (./stage.aux) ) 
+[7 <./image/v=20xm.jpg> <./image/v=20ym.jpg>] [8] [9 <./image/v=20d.jpg> <./ima
+ge/v=20oa_2.jpg> <./image/v=20or_2.jpg>] [10 <./image/v=24xm.jpg> <./image/v=24
+ym.jpg>] [11 <./image/v=24d.jpg> <./image/v=24oa_2.jpg> <./image/v=24or_2.jpg>]
+[12 <./image/v=28xm.jpg> <./image/v=28ym.jpg>] [13 <./image/v=28d.jpg> <./image
+/v=28oa_2.jpg> <./image/v=28or_2.jpg>] (./stage.aux) ) 
 Here is how much of TeX's memory you used:
- 14845 strings out of 493014
- 291040 string characters out of 6137001
- 295393 words of memory out of 5000000
- 18250 multiletter control sequences out of 15000+600000
- 13255 words of font info for 34 fonts, out of 8000000 for 9000
+ 15481 strings out of 493014
+ 299072 string characters out of 6137001
+ 311897 words of memory out of 5000000
+ 18862 multiletter control sequences out of 15000+600000
+ 18077 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,12n,50p,10379b,528s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c
-:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/
-2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2016/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2016/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2016/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr7.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1
-200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c
-:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/texlive/
-2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2016/texmf
--dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on stage.pdf (17 pages, 5338908 bytes).
+ 38i,13n,50p,10379b,608s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2016/texmf-di
+st/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2016/texmf-dist/fonts/e
+nc/dvips/cm-super/cm-super-ts1.enc}<c:/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmmi12.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmm
+i7.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2016/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2016/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super
+/sfbx1200.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.
+pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfcc1000.pfb><c:/te
+xlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2016
+/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on stage.pdf (13 pages, 5351781 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 130 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 106 words of extra memory for PDF output out of 10000 (max. 10000000)
 

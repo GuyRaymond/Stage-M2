@@ -10,19 +10,21 @@
 \usepackage{siunitx}
 \usepackage{textcomp}
 \usepackage{xcolor}
-\usepackage[lofdepth,lotdepth]{subfig}
+\usepackage{subfloat}
+\usepackage[caption=false,font=footnotesize,labelformat=simple]{subfig}
+%\usepackage{subfig}
 \begin{document}
 \section{Dispositif expérimental}
 
-Nous avions à notre dispostion pour effectuer nos mesures : une soufferie, un capteur de pression pouvant aller jusqu'à $500Pa$, un capteur de température, d'une surface ayant un petit trou par où la goutte est injectée par en dessous, une séringue de capacité $5ml$, d'un injecteur qui contrôle le volume de la goûtte à injecter, d'un écran laser pour bien visualiser notre goutte et d'un ordinateur pour observer les images prises par la caméra.
+Nous avions à notre disposition pour effectuer nos mesures : une soufflerie, un capteur de pression pouvant aller jusqu'à $500Pa$, un capteur de température, d'une surface ayant un petit trou par où la goutte est injectée par en dessous, une seringue de capacité $5ml$, d'un injecteur qui contrôle le volume de la goutte à injecter, d'un écran laser pour bien visualiser notre goutte et d'un ordinateur pour observer les images prises par la caméra.
 
-\begin{figure}[hb]
+\begin{figure}[!hb]
 \centering
 	\includegraphics[width = 0.4\linewidth]{./image/Surface.jpg}
 	\caption{Camera, surface et écran à laser}
 	\label{fig:Plan}
 \end{figure}
-\begin{figure}[hb]
+\begin{figure}[!hb]
 \centering
 	\includegraphics[width = 0.5\linewidth]{./image/Ecran.jpg}
 	\caption{Ecran d'observation}
@@ -33,19 +35,19 @@ Nous avions à notre dispostion pour effectuer nos mesures : une soufferie, un c
 \section{Anémomètre à fil chaud}
 C'est l'anémomètre à fil chaud qui nous a permis de déterminer les profils de la couche limite dans notre écoulement.
 
-Le principe de l'anénomètre à fil chaud est de placer un fil chaud (de l'ordre de $1mm$ de long et de $1\mu m$ de diamètre) dans l'écoulement et de maintenir sa température constante.
+Le principe de l'anémomètre à fil chaud est de placer un fil chaud (de l'ordre de $1mm$ de long et de $1\mu m$ de diamètre) dans l'écoulement et de maintenir sa température constante.
 
 l'écoulement retirera une énergie au fil chaud et pour maintenir la température constante du fil chaud, on lui fournit une certaine énergie et cette énergie fournie (la tension qu'il a fallu fournir) est liée à la vitesse au niveau du fil chaud.
 
 
 \section{Paramètres mesurés}
 
-\begin{figure}[ht]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 1]{./image/rrgou2.png}
 	\caption{Paramètres mesurés}
 \end{figure}
-\begin{figure}[ht]
+\begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 0.5]{./image/crop_tvitesse=28_volume=003.png}
 	\caption{Goutte d'eau de volume $0.03$ml avec: \\$U = 0$, $\theta_{a} = \ang{45}$, $\theta_{r} = \ang{50.17}$, $x_{1} = 14.66mm$, $x_{2} = 6.77mm$,\\ $d = 7.89mm$, $h = 4.86mm$ et $x_{h} = 48$}
@@ -84,9 +86,9 @@ Nos mesures dans la soufflerie ont été effectuées de 2 manières.\\
 
 D'abord, nous mettions d'abord en marche la soufflerie jusqu'à ce que la vitesse se stabilise puis on injectait le volume de goutte désiré.
 
-La difficuté de cette méthode est que la goutte d'eau se mettait souvent en mouvement avant la fin d'injection, avant d'atteindre le volume de goutte d'eau désirée.\\
+La difficulté de cette méthode est que la goutte d'eau se mettait souvent en mouvement avant la fin d'injection, avant d'atteindre le volume de goutte d'eau désirée.\\
 
-Ensuite nous injections d'abord la goutte d'eau de volume désiré et c'est par la suite que nous mettions la soufferie en marche.
+Ensuite nous injections d'abord la goutte d'eau de volume désiré et c'est par la suite que nous mettions la soufflerie en marche.
 
 Dans ce cas la vitesse de la soufflerie prends relativement court à se stabiliser donc nous n'avons pas la vitesse désirée toute suite.\\
 
@@ -94,119 +96,150 @@ C'est dernière méthode où le débit n'était pas un paramètre important que 
 \newpage
 \section{Résultat}
 
-Nous présentons les résultats obtenus après l'extraction de nos paramètres et nous en ferons une analyse.
+Nous présentons les résultats obtenus après l'extraction de nos paramètres et nous en ferons une analyse.\\
+Nous commençons par présenter les figures \ref{fig:entre_xaxrd} et \ref{fig:entre_oaor} qui illustre bien l'ensemble de nos observations.\\
 
-\begin{figure}[htp]
-    \centering
-	\includegraphics[width = \linewidth]{./image/v=24_vol=004_xaxrd.jpg}
+On observe la position de l'avant $x_{a}$ de la goutte se met à avancer, nous avons la longueur $d$ qui augmenter et lorsque cette longueur $d$ qui diminue, c'est la position de l'arrière $x_{r}$.
 
-     
-	\includegraphics[width = \linewidth]{./image/v=24_vol=004_oaor.jpg}
-    
+Cela traduit le fait que la commence à bouger si l'avant ou l'arrière commence à bouger, l'arrière peut commencer à bouger avant l'avant et vice-versa.\\
+
+Pour les angles de contact, on observe que l'angle à l'avant $\theta_{a}$ comme initialement à augmenter quand le goutte puis $\theta_{a}$ oscille avec des grandes amplitudes autour d'un certain angle.
+
+L'angle de contact $\theta_{r}$ commence par diminuer quand la longueur $d$ augmente puis $\theta_{r}$ se met à osciller avec de faibles amplitudes au d'un certain angle.\\
+
+Les oscillations correspondent à des mouvements oscillant de la goutte qui oscillait en reculant et en avançant rapidement autout d'une même position avant d'avancer d'un grand coup.
+
+\newpage
+\begin{figure*}[!ht]
+	\centering
+	\begin{minipage}{0.95\linewidth}
+		\includegraphics[width=\linewidth]{./image/v=24_vol=004_xaxrd.jpg}
+		\caption{$\textcolor{blue}{x_{a}}$,
+		$\textcolor{red}{x_{r}}$, $\textcolor{yellow}{d}$}
+		\label{fig:entre_xaxrd}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.95\linewidth}
+		\includegraphics[width=\linewidth]{./image/v=24_vol=004_oaor.jpg}
+		\caption{$\textcolor{blue}{\theta_{a}}$,
+		$\textcolor{red}{\theta_{r}}$}
+		\label{fig:entre_oaor}
+	\end{minipage}
 	\caption{$U_{\infty}=24m.s^{-1}$, volume =$0.04ml$}
-\end{figure}
-
-\subsection{Angle de contact avant $\theta_{a}$}
-
-Nous avions pu constater lors de nos expériences que l'angle d'avancé augmentait globalement au cours du temps, ce que semble indiquer les figures.\\
-
-Il y avait aussi des oscillations rapides autour d'un certaine position avant que la goutte avance de nouveau (le point avant avançait puis reculait) et c'est que doit traduire cette oscillation d'angle tout en augmentant globalement.
-
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \linewidth]{./image/v=20oa_2.jpg}
-	\caption{Angle à l'avant $\theta_{a}$, $U_{\infty}=20m.s^{-1}$}
-\end{figure}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \linewidth]{./image/v=24oa_2.jpg}
-	\caption{Angle à l'avant $\theta_{a}$, $U_{\infty}=24m.s^{-1}$}
-\end{figure}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \linewidth]{./image/v=28oa_2.jpg}
-	\caption{$\theta_{a}$, $U_{\infty}=28m.s^{-1}$}
-\end{figure}
+	%\label{fig:entree}
+ \end{figure*}
 
 
-\subsection{Angle de contact arrière $\theta_{r}$}
+\newpage
+\subsection{Vitesse de $20m.s^{-1}$}
 
-Nous avions aussi constaté lors de nos expériences que l'angle arrière $\theta_{r}$ dimininuait (avec des oscillations) globalement au cours du temps, ce que semble indiquer les figures.\\
+On constate les angles évoluent comme nous l'avons déjà présenté, mais que la longueur $d$ de la goutte semble avoir un maximum proche de le longueur capillaire de l'eau ($25 mm$).
 
-\begin{figure}[ht]
+En ce qui conne la hauteur maximale de la goutte, elle.
+\begin{figure}[!h]
 	\centering
-	\includegraphics[width = \linewidth]{./image/v=20or_2.jpg}
-	\caption{$\theta_{r}$, $U_{\infty}=20m.s^{-1}$}
-\end{figure}
-\begin{figure}[hb]
-	\centering
-	\includegraphics[width = \linewidth]{./image/v=24or_2.jpg}
-	\caption{$\theta_{r}$, $U_{\infty}=24m.s^{-1}$}
-\end{figure}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \linewidth]{./image/v=28or_2.jpg}
-	\caption{$\theta_{r}$, $U_{\infty}=28m.s^{-1}$}
-\end{figure}
-
-
-\subsection{Longueur $d$ entre le point avant et arrière}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \linewidth]{./image/v=20d.jpg}
-	\caption{$d$, $U_{\infty}=20m.s^{-1}$}
-\end{figure}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \linewidth]{./image/v=24d.jpg}
-	\caption{$d$, $U_{\infty}=24m.s^{-1}$}
-\end{figure}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \linewidth]{./image/v=28d.jpg}
-	\caption{$d$, $U_{\infty}=28m.s^{-1}$}
-\end{figure}
-
-\subsection{Hauteur maximale $h$}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \linewidth]{./image/v=20ym.jpg}
-	\caption{$h$, $U_{\infty}=20m.s^{-1}$}
-\end{figure}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \linewidth]{./image/v=24ym.jpg}
-	\caption{$h$, $U_{\infty}=24m.s^{-1}$}
-\end{figure}
-\begin{figure}[h]
-	\centering
-	\includegraphics[width = \linewidth]{./image/v=28ym.jpg}
-	\caption{Hauteur maximale $h$, $U_{\infty}=28m.s^{-1}$}
-\end{figure}
-
-\subsection{Position de la hauteur maximale $x_{h}$}
-
-\begin{figure}[h]
-	\centering
+	\begin{minipage}{0.95\linewidth}
 	\includegraphics[width = \linewidth]{./image/v=20xm.jpg}
-	\caption{Position de la hauteur maximale en $x_{h}$, $U_{\infty}=20m.s^{-1}$}
+	\caption{$x_{max}$}
+		\label{fig:v=20xm}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=20ym.jpg}
+	\caption{$y_{max}$}
+		\label{fig:v=20ym}
+	\end{minipage}
+\end{figure}
+\begin{figure}[!h]
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=20d.jpg}
+	\caption{$d$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=20oa_2.jpg}
+	\caption{$\theta_{a}$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=20or_2.jpg}
+	\caption{$\theta_{r}$}
+	\end{minipage}
 \end{figure}
 
-\begin{figure}[h]
+
+\subsection{Vitesse de $24m.s^{-1}$}
+
+\begin{figure}[!h]
 	\centering
+	\begin{minipage}{0.95\linewidth}
 	\includegraphics[width = \linewidth]{./image/v=24xm.jpg}
-	\caption{Position de la hauteur maximale en $x_{h}$, $U_{\infty}=24m.s^{-1}$}
+	\caption{$x_{max}$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24ym.jpg}
+	\caption{$y_{max}$}
+	\end{minipage}
+\end{figure}
+\begin{figure}[!h]
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24d.jpg}
+	\caption{$d$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24oa_2.jpg}
+	\caption{$\theta_{a}$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24or_2.jpg}
+	\caption{$\theta_{r}$}
+	\end{minipage}
 \end{figure}
 
+\subsection{Vitesse de $28m.s^{-1}$}
 
-\begin{figure}[h]
+\begin{figure}[!h]
 	\centering
+	\begin{minipage}{0.95\linewidth}
 	\includegraphics[width = \linewidth]{./image/v=28xm.jpg}
-	\caption{Position de la hauteur maximale $x_{h}$ $U_{\infty}=28m.s^{-1}$}
+	\caption{$x_{max}$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28ym.jpg}
+	\caption{$y_{max}$}
+	\end{minipage}
+\end{figure}
+\begin{figure}[!h]
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28d.jpg}
+	\caption{$d$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28oa_2.jpg}
+	\caption{$\theta_{a}$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28or_2.jpg}
+	\caption{$\theta_{r}$}
+	\end{minipage}
 \end{figure}
 
+\section{Debit pris en compte}
+
+Nous présentons ici quelques mesures faites en injectant un volume de $0.06ml$ d'eau  à un debit fixé avec une vitesse dans la soufflerie déjà établie.
+
+Nous comparons ces données avec une goutte de débit nulle dont qui a été formé sur notre surface en l'absence découlement.\\
 
 
+On constate la longueur "$d$" pour des valeurs de débit non nulles commence par des valeur très fal
 
+\begin{figure}[!h]
+	\centering
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/p=365_vol=006d.jpg}
+	\caption{$d$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28ym.jpg}
+	\caption{$y_{max}$}
+	\end{minipage}
+\end{figure}
 
 \end{document}
