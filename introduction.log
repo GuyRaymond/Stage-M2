@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.12.6)  27 JUN 2018 00:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.12.6)  27 JUN 2018 20:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -943,7 +943,8 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-) (./introduction.aux)
+)
+No file introduction.aux.
 \openout1 = `introduction.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -960,7 +961,6 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 13.
-
 (c:/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
@@ -1060,9 +1060,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 {c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 (./introduction.aux) ) 
 Here is how much of TeX's memory you used:
- 14707 strings out of 493014
- 288323 string characters out of 6137001
- 292384 words of memory out of 5000000
+ 14705 strings out of 493014
+ 288289 string characters out of 6137001
+ 291384 words of memory out of 5000000
  18146 multiletter control sequences out of 15000+600000
  7809 words of font info for 25 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1070,7 +1070,7 @@ Here is how much of TeX's memory you used:
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-s
 uper-t1.enc}<c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pf
 b><c:/texlive/2016/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on introduction.pdf (1 page, 29606 bytes).
+Output written on introduction.pdf (1 page, 29178 bytes).
 PDF statistics:
  17 PDF objects out of 1000 (max. 8388607)
  11 compressed objects within 1 object stream

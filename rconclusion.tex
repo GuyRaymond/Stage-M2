@@ -1,12 +1,28 @@
+\section*{Conclusion}
 
-\section{Conclusion}
+Nous avons fait l'étude d'une goutte d'eau sur une plaque plane en présence dans un écoulement.\\
 
-Réussir à extraire des paramètres sur des images d'une goutte d'eau dans une soufflerie pour mieux comprendre ce qui se passe quand un goutte glisse sur un plan incliné était l'objectif de notre stage.\\
+Nous avons pris les photos de gouttes d'eau dans une soufflerie soit en injectant une goutte de volume donné (avec un certain débit) quand la vitesse était déjà établie dans la soufflerie, soit en injectant d'abord la goutte d'eau de volume donné avant de mettre la soufflerie en marche.
+
+Les photos des gouttes d'eau ont été prise avec une caméra à la fréquence de $50Hz$, l'extraction des données de nos images a été faite à l'aide de Matlab et nous avons fait une analyse de nos résultats.\\
 
 
-Pour arriver à atteindre notre objectif, nous avons pris les photos de gouttes d'eau dans la soufflerie soit en essayant d'injecter une goutte de volume donné (avec un certain débit) quand la vitesse était déjà établie dans la soufflerie, soit en injectant d'abord la goutte d'eau de volume donné avant de mettre en marche la souffle pour obtenir la vitesse souhaitée.\\
+Pour affiner nos résultats, nous devons améliorer notre algorithme de détection (automatique pour des milliers d'images) des tangentes qui reste très sensible au nombre de points pris pour trouver la tangente.
 
-Les difficultés numériques ont été d'arriver à extraire les paramètres qu'on souhaitait de nos images et celle expérimentale provenait de notre surface qui n'est pas parfaite comme dans la théorie et d'arriver à arriver à une situation de départ où on a le volume de goutte désiré et la vitesse de la soufflerie déjà établie (ou très rapidement établie).
+Nous avons constaté que contrairement à ce qui se passe lorsqu'une goutte glisse sur un plan incliné, 
+la goutte d'eau sur notre plaque (en présence d'un écoulement) oscillait autour d'une position (reculait et avançait) avant d'avancer subitement.
 
-Ce stage a une partie numérique aussi importante que la partie expérimentale
+Ne nous attendions pas à voir ces oscillations et n'avons pas eu le temps de les étudier et cette étude devrait permettre d'améliorer nos résultats et de mieux comprendre le phénomène de goutte soufflée.
 
+Nous filmions nos gouttes à une fréquence de $f_{exp} = 50Hz$ et il faudrait filmer avec le double de la fréquence la plus rapide $f_{max}$ d'oscillation d'une goutte dans nos expériences  pour étudier ces oscillations d'après le théorème de Shannon.
+
+Si $f_{max} <= 25 Hz$, nos données pourront être utilisées pour faire l'étude de ces oscillations.
+
+
+Changer les conditions de mouillage en changeant le liquide ou de plaque plane. Nous avons fait nos expériences uniquement avec de l'eau pour liquide sur une plaque plane en acier. \\
+
+Ce stage nous a permis de nous initier à la recherche.
+
+La partie expérimentale du stage nous a  permis d'apprendre à mesurer des profils de couche limite (avec l'anémomètre à fil chaud), de passer du temps à utiliser une soufflerie, d'apprendre à utiliser une caméra et de découvrir plein d'autres instruments.
+
+La partie numérique du stage nous a permis de découvrir le traitement d'image et pour moi c'est un acquis inestimable.
