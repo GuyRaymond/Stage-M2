@@ -1,4 +1,3 @@
-
 \section{Dispositif expérimental}
 
 Nous avions à notre disposition pour effectuer nos mesures : une soufflerie, un capteur de pression pouvant aller jusqu'à $500Pa$, un capteur de température, d'une surface ayant un petit trou par où la goutte est injectée par en dessous, une seringue de capacité $5ml$, d'un injecteur qui contrôle le volume de la goutte à injecter, d'un écran laser pour bien visualiser notre goutte et d'un ordinateur pour observer les images prises par la caméra.
@@ -35,7 +34,7 @@ l'écoulement retirera une énergie au fil chaud et pour maintenir la températu
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 0.5]{./image/crop_tvitesse=28_volume=003.png}
-	\caption{Goutte d'eau de volume $0.03$ml avec: \\$U = 0$, $\theta_{a} = \ang{45}$, $\theta_{r} = \ang{50.17}$, $x_{1} = 14.66mm$, $x_{2} = 6.77mm$,\\ $d = 7.89mm$, $h = 4.86mm$ et $x_{h} = 48$}
+	\caption{Goutte d'eau de volume $0.03$ml avec: \\$U = 0$, $\theta_{a} = \ang{45}$, $\theta_{r} = \ang{50.17}$, $x_{1} = 14.66mm$, $x_{2} = 6.77mm$,\\ $d = 7.89mm$, $h = 4.86mm$ et $x_{h} = 48mm$}
 \end{figure}
 
 
@@ -84,33 +83,34 @@ C'est dernière méthode où le débit n'était pas un paramètre important que 
 Nous présentons les résultats obtenus après l'extraction de nos paramètres et nous en ferons une analyse.\\
 Nous commençons par présenter les figures \ref{fig:entre_xaxrd} et \ref{fig:entre_oaor} qui illustre bien l'ensemble de nos observations.\\
 
-On observe la position de l'avant $x_{a}$ de la goutte se met à avancer, nous avons la longueur $d$ qui augmenter et lorsque cette longueur $d$ qui diminue, c'est la position de l'arrière $x_{r}$.
+On observe la position de l'avant $x_{a}$ de la goutte se met à avancer quand la longueur $d$ augmente et lorsque cette longueur $d$ diminue, c'est la position de l'arrière $x_{r}$ bouge.
 
-Cela traduit le fait que la commence à bouger si l'avant ou l'arrière commence à bouger, l'arrière peut commencer à bouger avant l'avant et vice-versa.\\
+Cela traduit le fait que la goutte commence à bouger si l'avant ou l'arrière commence à bouger, l'arrière pouvant commencer à bouger avant l'avant et vice-versa.\\
 
-Pour les angles de contact, on observe que l'angle à l'avant $\theta_{a}$ comme initialement à augmenter quand le goutte puis $\theta_{a}$ oscille avec des grandes amplitudes autour d'un certain angle.
+Pour les angles de contact, on observe que l'angle à l'avant $\theta_{a}$ commence initialement à augmenter quand la longueur $d$ de la goutte augment, puis $\theta_{a}$ oscille avec des grandes amplitudes autour d'un certain angle.
 
-L'angle de contact $\theta_{r}$ commence par diminuer quand la longueur $d$ augmente puis $\theta_{r}$ se met à osciller avec de faibles amplitudes au d'un certain angle.\\
+L'angle de contact arrière $\theta_{r}$ commence lui par diminuer quand la longueur $d$ augmente puis $\theta_{r}$ se met à osciller avec de faibles amplitudes au d'un certain angle.\\
 
-Les oscillations correspondent à des mouvements oscillant de la goutte qui oscillait en reculant et en avançant rapidement autout d'une même position avant d'avancer d'un grand coup.
+Les oscillations correspondent à des mouvements oscillant de la goutte qui oscillait en reculant et en avançant rapidement autour d'une même position avant d'avancer subitement.
 
 \newpage
 \begin{figure*}[!ht]
 	\centering
-	\begin{minipage}{0.95\linewidth}
+	\begin{minipage}{0.8\linewidth}
 		\includegraphics[width=\linewidth]{./image/v=24_vol=004_xaxrd.jpg}
 		\caption{$\textcolor{blue}{x_{a}}$,
-		$\textcolor{red}{x_{r}}$, $\textcolor{yellow}{d}$}
+		$\textcolor{red}{x_{r}}$, $\textcolor{yellow}{d}$, 
+		$U_{\infty}=24m.s^{-1}$, volume =$0.04ml$}
 		\label{fig:entre_xaxrd}
 	\end{minipage}
 	\vfill
-	\begin{minipage}{0.95\linewidth}
+	\begin{minipage}{0.8\linewidth}
 		\includegraphics[width=\linewidth]{./image/v=24_vol=004_oaor.jpg}
 		\caption{$\textcolor{blue}{\theta_{a}}$,
-		$\textcolor{red}{\theta_{r}}$}
+		$\textcolor{red}{\theta_{r}}$, $U_{\infty}=24m.s^{-1}$, volume =$0.04ml$}
 		\label{fig:entre_oaor}
 	\end{minipage}
-	\caption{$U_{\infty}=24m.s^{-1}$, volume =$0.04ml$}
+	%\caption{$U_{\infty}=24m.s^{-1}$, volume =$0.04ml$}
 	%\label{fig:entree}
  \end{figure*}
 
@@ -118,91 +118,122 @@ Les oscillations correspondent à des mouvements oscillant de la goutte qui osci
 \newpage
 \subsection{Vitesse de $20m.s^{-1}$}
 
-On constate les angles évoluent comme nous l'avons déjà présenté, mais que la longueur $d$ de la goutte semble avoir un maximum proche de le longueur capillaire de l'eau ($25 mm$).
+On observe sur la figure \ref{fig:v=20d} que la longueur $d$ reste presque constante pendant un certain temps (les angles $\theta_{a}$ et $\theta_{r}$ restant eux aussi constant) et ensuite la longueur peut diminuer ou avancer.\\
 
-En ce qui conne la hauteur maximale de la goutte, elle.
+On constate aussi que la longueur $d$ de la goutte commence à osciller à partir d'une certaine longueur.\\
+
+On observe que les angles de contact évoluent de manière similaire pour toutes les gouttes : l'angle d'avancé commence à augmenter puis oscille autour de \ang{60}, l'angle de reculé diminue puis oscille aux alentours de \ang{5}.\\
+
+Les oscillations observées sont liées à la forme de la goutte et peuvent être mise en évidence avec la position et la hauteur maximale de la goutte (illustré figure \ref{fig:v=20xm} et \ref{fig:v=20ym}.\\
+
+Nous observons que la hauteur maximale de la goutte $y_{max}$, après une phase initiale où elle est presque constante, elle peut se mettre à baiser ou à augmenter, mais lorsque $y_{max}$ augmente et atteint une certaine hauteur, $y_{max}$ se met à osciller autour de cette hauteur.
+
+\newpage
+%Expliqué évolution de ymax avec quelques photos.
+\begin{figure}[!ht]
+	\begin{minipage}{0.8\linewidth}
+		\includegraphics[width = \linewidth]{./image/v=20d.jpg}
+	\caption{$d$, $U_{\infty}=20m.s^{-1}$}
+		\label{fig:v=20d}
+	\end{minipage}
+	\begin{minipage}{0.8\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=20oa_2.jpg}
+	\caption{$\theta_{a}$, $U_{\infty}=20m.s^{-1}$}
+		\label{fig:v=20oa_2}
+	\end{minipage}
+	\begin{minipage}{0.85\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=20or_2.jpg}
+	\caption{$\theta_{r}$, $U_{\infty}=20m.s^{-1}$}
+		\label{fig:v=20or_2}
+	\end{minipage}
+\end{figure}
+
+
 \begin{figure}[!h]
 	\centering
-	\begin{minipage}{0.95\linewidth}
+	\begin{minipage}{0.8\linewidth}
 	\includegraphics[width = \linewidth]{./image/v=20xm.jpg}
-	\caption{$x_{max}$}
+	\caption{$x_{max}$, $U_{\infty}=20m.s^{-1}$}
 		\label{fig:v=20xm}
 	\end{minipage}
-	\begin{minipage}{0.95\linewidth}
+	\begin{minipage}{0.8\linewidth}
 	\includegraphics[width = \linewidth]{./image/v=20ym.jpg}
-	\caption{$y_{max}$}
+	\caption{$y_{max}$, $U_{\infty}=20m.s^{-1}$}
 		\label{fig:v=20ym}
 	\end{minipage}
 \end{figure}
+
+\newpage
+\subsection{Vitesse de $24m.s^{-1}$}
+
+Nous constatons aussi sur les figures \ref{fig:v=24d}, \ref{fig:v=24oa_2} et \ref{fig:v=24or_2} que $d$ reste constant un certain temps puis augmente ou diminue et $d$ se met à osciller s'il atteint une certaine longueur en augmentant.
+
+L'angle $\theta_{a}$ lui aussi est d'abord constant, puis il augmente et se met à osciller autour de $\ang{60}$.
+
+L'angle $\theta_{r}$ reste aussi constant un certain temps avant de diminuer et d'osciller autour de $\ang{5}$.
 \begin{figure}[!h]
-	\begin{minipage}{0.95\linewidth}
-	\includegraphics[width = \linewidth]{./image/v=20d.jpg}
-	\caption{$d$}
+	\begin{minipage}{0.8\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24d.jpg}
+	\caption{$d$, $U_{\infty}=24m.s^{-1}$}
+		\label{fig:v=24d}
 	\end{minipage}
-	\begin{minipage}{0.95\linewidth}
-	\includegraphics[width = \linewidth]{./image/v=20oa_2.jpg}
-	\caption{$\theta_{a}$}
+	\begin{minipage}{0.8\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24oa_2.jpg}
+	\caption{$\theta_{a}$, $U_{\infty}=24m.s^{-1}$}
+		\label{fig:v=24oa_2}
 	\end{minipage}
-	\begin{minipage}{0.95\linewidth}
-	\includegraphics[width = \linewidth]{./image/v=20or_2.jpg}
-	\caption{$\theta_{r}$}
+	\begin{minipage}{0.8\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24or_2.jpg}
+	\caption{$\theta_{r}$, $U_{\infty}=24m.s^{-1}$}
+		\label{fig:v=24or_2}
 	\end{minipage}
 \end{figure}
-
-
-\subsection{Vitesse de $24m.s^{-1}$}
 
 \begin{figure}[!h]
 	\centering
-	\begin{minipage}{0.95\linewidth}
+	\begin{minipage}{0.8\linewidth}
 	\includegraphics[width = \linewidth]{./image/v=24xm.jpg}
-	\caption{$x_{max}$}
+	\caption{$x_{max}$, $U_{\infty}=24m.s^{-1}$}
+		\label{fig:v=24xm}
 	\end{minipage}
-	\begin{minipage}{0.95\linewidth}
+	\begin{minipage}{0.8\linewidth}
 	\includegraphics[width = \linewidth]{./image/v=24ym.jpg}
-	\caption{$y_{max}$}
+	\caption{$y_{max}$, $U_{\infty}=24m.s^{-1}$}
 	\end{minipage}
-\end{figure}
-\begin{figure}[!h]
-	\begin{minipage}{0.95\linewidth}
-	\includegraphics[width = \linewidth]{./image/v=24d.jpg}
-	\caption{$d$}
-	\end{minipage}
-	\begin{minipage}{0.95\linewidth}
-	\includegraphics[width = \linewidth]{./image/v=24oa_2.jpg}
-	\caption{$\theta_{a}$}
-	\end{minipage}
-	\begin{minipage}{0.95\linewidth}
-	\includegraphics[width = \linewidth]{./image/v=24or_2.jpg}
-	\caption{$\theta_{r}$}
-	\end{minipage}
+		\label{fig:v=24ym}
 \end{figure}
 
 \subsection{Vitesse de $28m.s^{-1}$}
 
 \begin{figure}[!h]
-	\centering
-	\begin{minipage}{0.95\linewidth}
-	\includegraphics[width = \linewidth]{./image/v=28xm.jpg}
-	\caption{$x_{max}$}
+	\begin{minipage}{0.8\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28d.jpg}
+	\caption{$d$, $U_{\infty}=28m.s^{-1}$}
+		\label{fig:v=28d}
 	\end{minipage}
-	\begin{minipage}{0.95\linewidth}
-	\includegraphics[width = \linewidth]{./image/v=28ym.jpg}
-	\caption{$y_{max}$}
+	\begin{minipage}{0.8\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28oa_2.jpg}
+	\caption{$\theta_{a}$, $U_{\infty}=28m.s^{-1}$}
+		\label{fig:v=28oa_2}
+	\end{minipage}
+	\begin{minipage}{0.8\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28or_2.jpg}
+	\caption{$\theta_{r}$, $U_{\infty}=28m.s^{-1}$}
+		\label{fig:v=28or_2}
 	\end{minipage}
 \end{figure}
+
 \begin{figure}[!h]
-	\begin{minipage}{0.95\linewidth}
-	\includegraphics[width = \linewidth]{./image/v=28d.jpg}
-	\caption{$d$}
+	\centering
+	\begin{minipage}{0.8\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28xm.jpg}
+	\caption{$x_{max}$, $U_{\infty}=28m.s^{-1}$}
+		\label{fig:v=28xm}
 	\end{minipage}
-	\begin{minipage}{0.95\linewidth}
-	\includegraphics[width = \linewidth]{./image/v=28oa_2.jpg}
-	\caption{$\theta_{a}$}
-	\end{minipage}
-	\begin{minipage}{0.95\linewidth}
-	\includegraphics[width = \linewidth]{./image/v=28or_2.jpg}
-	\caption{$\theta_{r}$}
+	\begin{minipage}{0.8\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28ym.jpg}
+	\caption{$y_{max}$, $U_{\infty}=28m.s^{-1}$}
+		\label{fig:v=28ym}
 	\end{minipage}
 \end{figure}
 
@@ -217,12 +248,7 @@ On constate la longueur "$d$" pour des valeurs de débit non nulles commence par
 
 \begin{figure}[!h]
 	\centering
-	\begin{minipage}{0.95\linewidth}
 	\includegraphics[width = \linewidth]{./image/p=365_vol=006d.jpg}
 	\caption{$d$}
-	\end{minipage}
-	\begin{minipage}{0.95\linewidth}
-	\includegraphics[width = \linewidth]{./image/v=28ym.jpg}
-	\caption{$y_{max}$}
-	\end{minipage}
+\label{fig:p=365_vol=006d}
 \end{figure}
