@@ -1,0 +1,228 @@
+
+\section{Dispositif expérimental}
+
+Nous avions à notre disposition pour effectuer nos mesures : une soufflerie, un capteur de pression pouvant aller jusqu'à $500Pa$, un capteur de température, d'une surface ayant un petit trou par où la goutte est injectée par en dessous, une seringue de capacité $5ml$, d'un injecteur qui contrôle le volume de la goutte à injecter, d'un écran laser pour bien visualiser notre goutte et d'un ordinateur pour observer les images prises par la caméra.
+
+\begin{figure}[!hb]
+\centering
+	\includegraphics[width = 0.4\linewidth]{./image/Surface.jpg}
+	\caption{Camera, surface et écran à laser}
+	\label{fig:Plan}
+\end{figure}
+\begin{figure}[!hb]
+\centering
+	\includegraphics[width = 0.5\linewidth]{./image/Ecran.jpg}
+	\caption{Ecran d'observation}
+	\label{fig:Ecran d'observation}
+\end{figure}
+
+
+\section{Anémomètre à fil chaud}
+C'est l'anémomètre à fil chaud qui nous a permis de déterminer les profils de la couche limite dans notre écoulement.
+
+Le principe de l'anémomètre à fil chaud est de placer un fil chaud (de l'ordre de $1mm$ de long et de $1\mu m$ de diamètre) dans l'écoulement et de maintenir sa température constante.
+
+l'écoulement retirera une énergie au fil chaud et pour maintenir la température constante du fil chaud, on lui fournit une certaine énergie et cette énergie fournie (la tension qu'il a fallu fournir) est liée à la vitesse au niveau du fil chaud.
+
+
+\section{Paramètres mesurés}
+
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale = 1]{./image/rrgou2.png}
+	\caption{Paramètres mesurés}
+\end{figure}
+\begin{figure}[!ht]
+	\centering
+	\includegraphics[scale = 0.5]{./image/crop_tvitesse=28_volume=003.png}
+	\caption{Goutte d'eau de volume $0.03$ml avec: \\$U = 0$, $\theta_{a} = \ang{45}$, $\theta_{r} = \ang{50.17}$, $x_{1} = 14.66mm$, $x_{2} = 6.77mm$,\\ $d = 7.89mm$, $h = 4.86mm$ et $x_{h} = 48$}
+\end{figure}
+
+
+L'objectif du stage était de réussir à ressortir la courbe du contour d'une goutte à partir des photos prises avec notre caméra à la fréquence de $50hz$ et de pouvoir extraire les paramètres comme les angles de contact, la position avant et arrière de la goutte ou la hauteur maximale de la goutte et la position où on obtient cette hauteur maximale.
+
+\section{Mesures numériques}
+
+Nous avons déterminé le contour de la goutte à l'aide de la fonction de Matlab \emph{bwboundaries} qui nous donnait (après avoir réussi à faire les ajustements pour cibler notre zone d'intérêt) le contour sous forme de nuage points.
+
+Ce fut une étape assez difficile dont on a trouvé une solution qui nous satisfaisait assez tardivement (avoir le contour et la positions des points extrêmes ($x_{1}$ et $x_{2}$) ont posé beaucoup de difficulté).  \\
+
+Une fois le nuage de points de définissant le contour ayant été obtenu, obtenir les tangentes aux deux extrémités de la goutte nous a aussi pris assez de temps.
+
+Nous avons essayé de trouver des courbes d'interpolation autour de chaque extrémité (les points dont nous voulions les tangentes), mais les différentes fonctions d'interpolation de Matlab ou nos différentes méthodes n'arrivaient pas être visuellement proche de la tangente attendue lorsque la goutte changeait de forme.\\
+
+Nos gouttes prenaient des formes plus proche d'une courbe paramétrée en coordonnées polaires comme une cardioïde, les formes des gouttes étaient aussi souvent proche des coniques et les méthodes d'interpolation, en particulier celle se basant sur la recherche des polynômes d'ordre 2 ou plus, s'éloignaient très souvent des tangentes attendues visuellement.\\
+
+C'est l'interpolation par un polynôme d'ordre 1 qui donnait des résultats toujours proche des tangentes qu'on pouvait s'attendre visuellement, mais le nombre de points pris pour déterminer notre tangente avec la fonction \emph{polyfit} de Matlab jouait un rôle important.
+
+Sur un cas particulier, nous pouvions ajuster le nombre de points pour avoir une meilleure tangente (visuellement).
+
+Notre difficulté était de faire un algorithme pour traiter des milliers d'images qui arrivent à ajuster le nombre de points.
+
+Nous partions de $n$ points (le maximum entre 2 et $1\%$ du nombre de points dans notre nuage de points) puis nous trouvions les tangentes avec $n$ et $n+1$.
+
+Si les tangentes avec $n$ et $n+1$ faisaient entre elles un angle inférieure à $\ang{0.5}$, nous conservions la tangente faite avec $n$ points, sinon on posait $n = n+1$ et on recommençait.
+
+Si nous n'arrivions pas à avoir un angle inférieur à \ang{0.5}  entre les tangentes avec $n$ points et avec $n+1$ points, nous ne conservions pas l'image dans nos résultats faute de ne pouvoir avoir les angles de contact assez précisément.
+
+\section{Mesures expérimentales}
+
+Nos mesures dans la soufflerie ont été effectuées de 2 manières.\\
+
+D'abord, nous mettions d'abord en marche la soufflerie jusqu'à ce que la vitesse se stabilise puis on injectait le volume de goutte désiré.
+
+La difficulté de cette méthode est que la goutte d'eau se mettait souvent en mouvement avant la fin d'injection, avant d'atteindre le volume de goutte d'eau désirée.\\
+
+Ensuite nous injections d'abord la goutte d'eau de volume désiré et c'est par la suite que nous mettions la soufflerie en marche.
+
+Dans ce cas la vitesse de la soufflerie prends relativement court à se stabiliser donc nous n'avons pas la vitesse désirée toute suite.\\
+
+C'est dernière méthode où le débit n'était pas un paramètre important que présenterons davantage les résultats et nous ferons un comparatif lorsque le début jouait un rôle important.
+\newpage
+\section{Résultat}
+
+Nous présentons les résultats obtenus après l'extraction de nos paramètres et nous en ferons une analyse.\\
+Nous commençons par présenter les figures \ref{fig:entre_xaxrd} et \ref{fig:entre_oaor} qui illustre bien l'ensemble de nos observations.\\
+
+On observe la position de l'avant $x_{a}$ de la goutte se met à avancer, nous avons la longueur $d$ qui augmenter et lorsque cette longueur $d$ qui diminue, c'est la position de l'arrière $x_{r}$.
+
+Cela traduit le fait que la commence à bouger si l'avant ou l'arrière commence à bouger, l'arrière peut commencer à bouger avant l'avant et vice-versa.\\
+
+Pour les angles de contact, on observe que l'angle à l'avant $\theta_{a}$ comme initialement à augmenter quand le goutte puis $\theta_{a}$ oscille avec des grandes amplitudes autour d'un certain angle.
+
+L'angle de contact $\theta_{r}$ commence par diminuer quand la longueur $d$ augmente puis $\theta_{r}$ se met à osciller avec de faibles amplitudes au d'un certain angle.\\
+
+Les oscillations correspondent à des mouvements oscillant de la goutte qui oscillait en reculant et en avançant rapidement autout d'une même position avant d'avancer d'un grand coup.
+
+\newpage
+\begin{figure*}[!ht]
+	\centering
+	\begin{minipage}{0.95\linewidth}
+		\includegraphics[width=\linewidth]{./image/v=24_vol=004_xaxrd.jpg}
+		\caption{$\textcolor{blue}{x_{a}}$,
+		$\textcolor{red}{x_{r}}$, $\textcolor{yellow}{d}$}
+		\label{fig:entre_xaxrd}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.95\linewidth}
+		\includegraphics[width=\linewidth]{./image/v=24_vol=004_oaor.jpg}
+		\caption{$\textcolor{blue}{\theta_{a}}$,
+		$\textcolor{red}{\theta_{r}}$}
+		\label{fig:entre_oaor}
+	\end{minipage}
+	\caption{$U_{\infty}=24m.s^{-1}$, volume =$0.04ml$}
+	%\label{fig:entree}
+ \end{figure*}
+
+
+\newpage
+\subsection{Vitesse de $20m.s^{-1}$}
+
+On constate les angles évoluent comme nous l'avons déjà présenté, mais que la longueur $d$ de la goutte semble avoir un maximum proche de le longueur capillaire de l'eau ($25 mm$).
+
+En ce qui conne la hauteur maximale de la goutte, elle.
+\begin{figure}[!h]
+	\centering
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=20xm.jpg}
+	\caption{$x_{max}$}
+		\label{fig:v=20xm}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=20ym.jpg}
+	\caption{$y_{max}$}
+		\label{fig:v=20ym}
+	\end{minipage}
+\end{figure}
+\begin{figure}[!h]
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=20d.jpg}
+	\caption{$d$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=20oa_2.jpg}
+	\caption{$\theta_{a}$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=20or_2.jpg}
+	\caption{$\theta_{r}$}
+	\end{minipage}
+\end{figure}
+
+
+\subsection{Vitesse de $24m.s^{-1}$}
+
+\begin{figure}[!h]
+	\centering
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24xm.jpg}
+	\caption{$x_{max}$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24ym.jpg}
+	\caption{$y_{max}$}
+	\end{minipage}
+\end{figure}
+\begin{figure}[!h]
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24d.jpg}
+	\caption{$d$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24oa_2.jpg}
+	\caption{$\theta_{a}$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24or_2.jpg}
+	\caption{$\theta_{r}$}
+	\end{minipage}
+\end{figure}
+
+\subsection{Vitesse de $28m.s^{-1}$}
+
+\begin{figure}[!h]
+	\centering
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28xm.jpg}
+	\caption{$x_{max}$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28ym.jpg}
+	\caption{$y_{max}$}
+	\end{minipage}
+\end{figure}
+\begin{figure}[!h]
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28d.jpg}
+	\caption{$d$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28oa_2.jpg}
+	\caption{$\theta_{a}$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28or_2.jpg}
+	\caption{$\theta_{r}$}
+	\end{minipage}
+\end{figure}
+
+\section{Debit pris en compte}
+
+Nous présentons ici quelques mesures faites en injectant un volume de $0.06ml$ d'eau  à un debit fixé avec une vitesse dans la soufflerie déjà établie.
+
+Nous comparons ces données avec une goutte de débit nulle dont qui a été formé sur notre surface en l'absence découlement.\\
+
+
+On constate la longueur "$d$" pour des valeurs de débit non nulles commence par des valeur très fal
+
+\begin{figure}[!h]
+	\centering
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/p=365_vol=006d.jpg}
+	\caption{$d$}
+	\end{minipage}
+	\begin{minipage}{0.95\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=28ym.jpg}
+	\caption{$y_{max}$}
+	\end{minipage}
+\end{figure}
