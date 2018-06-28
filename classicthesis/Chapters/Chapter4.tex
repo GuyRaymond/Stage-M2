@@ -37,7 +37,7 @@ l'écoulement retirera une énergie au fil chaud et pour maintenir la températu
 \begin{figure}[!ht]
 	\centering
 	\includegraphics[scale = 0.5]{./gfx/crop_tvitesse=28_volume=003.png}
-	\caption{Goutte d'eau de volume $0.03$ml avec: \\$U = 0$, $\theta_{a} = \ang{45}$, $\theta_{r} = \ang{50.17}$, $x_{1} = 14.66mm$, $x_{2} = 6.77mm$,\\ $d = 7.89mm$, $h = 4.86mm$ et $x_{h} = 48mm$}
+	\caption{Goutte d'eau de volume $0.03$ml avec: \\$U = 0$, $\theta_{1} = \ang{45}$, $\theta_{2} = \ang{50.17}$, $x_{1} = 14.66mm$, $x_{2} = 6.77mm$,\\ $d = 7.89mm$, $h = 4.86mm$ et $x_{h} = 11.08mm$}
 \end{figure}
 
 
@@ -65,7 +65,7 @@ Nous partions de $n$ points (le maximum entre 2 et $1\%$ du nombre de points dan
 
 Si les tangentes avec $n$ et $n+1$ points faisaient entre elles un angle inférieur à $\ang{0.5}$, nous conservions la tangente faite avec $n$ points, sinon on posait $n = n+1$ et on recommençait.
 
-Si nous n'arrivions pas à avoir un angle inférieur à \ang{0.5}  entre les tangentes avec $n$ points et avec $n+1$ points, nous ne conservions pas l'image dans nos résultats faute de ne pouvoir avoir les angles de contact assez précisément.
+Si nous n'arrivions pas à avoir un angle inférieur à $\ang{0.5}$  entre les tangentes avec $n$ points et avec $n+1$ points, nous ne conservions pas l'image dans nos résultats faute de ne pouvoir avoir les angles de contact assez précisément.
 
 \section{Mesures expérimentales}
 
@@ -102,7 +102,8 @@ Les oscillations correspondent à des mouvements oscillant de la goutte qui osci
 		\includegraphics[width=\linewidth]{./gfx/v=24_vol=004_xaxrd.jpg}
 		\caption{$\textcolor{blue}{x_{a}}$,
 		$\textcolor{red}{x_{r}}$, $\textcolor{yellow}{d}$, 
-		$U_{\infty}=24m.s^{-1}$, volume =$0.04ml$}
+		$U_{\infty}=24m.s^{-1}$, \\
+                volume =$0.04ml$}
 		\label{fig:entre_xaxrd}
 	\end{minipage}
 	\vfill
@@ -135,14 +136,15 @@ Nous observons que la hauteur maximale de la goutte $y_{max}$, après une phase 
 		\includegraphics[width = \linewidth]{./gfx/test627.jpg}
 		\includegraphics[width = \linewidth]{./gfx/test628.jpg}
 		\includegraphics[width = \linewidth]{./gfx/test629.jpg}
-	\caption{$U_{\infty}=20m.s^{-1}$, de haut en bas,\\	
-	$t = ~0,~8,~12.52,~12.54,~12.58s$}
+	\caption{$U_{\infty}=20m.s^{-1}$, de haut en bas nous avons :\\
+	$t = ~0s,~8s,~12.52s,~12.54s,~12.58s$}
 		\label{fig:test}
 \end{figure}
 
 \newpage
 
 \begin{figure}[!ht]
+        \centering
 	\begin{minipage}{0.7\linewidth}
 		\includegraphics[width = \linewidth]{./gfx/v=20d.jpg}
 	\caption{$d$, $U_{\infty}=20m.s^{-1}$}
@@ -188,6 +190,7 @@ L'angle $\theta_{r}$ reste aussi constant un certain temps avant de diminuer et 
 Nous observons aussi que la hauteur maximale de la goutte $y_{max}$, après une phase initiale où elle est presque constante, elle peut se mettre à baiser ou à augmenter, mais lorsque $y_{max}$ augmente et atteint une certaine hauteur, $y_{max}$ se met à osciller autour de cette hauteur.
 \newpage
 \begin{figure}[!h]
+        \centering
 	\begin{minipage}{0.7\linewidth}
 	\includegraphics[width = \linewidth]{./gfx/v=24d.jpg}
 	\caption{$d$, $U_{\infty}=24m.s^{-1}$}
@@ -230,6 +233,7 @@ Nous observons aussi que la hauteur maximale de la goutte $y_{max}$, après une 
 
 \newpage
 \begin{figure}[!ht]
+        \centering
 	\begin{minipage}{0.7\linewidth}
 	\includegraphics[width = \linewidth]{./gfx/v=28d.jpg}
 	\caption{$d$, $U_{\infty}=28m.s^{-1}$}
