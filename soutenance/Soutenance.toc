@@ -1,0 +1,10 @@
+\beamer@endinputifotherversion {3.36pt}
+\select@language {french}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Couche limite}{3}{0}{2}
+\beamer@subsectionintoc {2}{1}{Couche limite de Blasius}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Comparaisons Blasius et exp\IeC {\'e}rience}{6}{0}{2}
+\beamer@sectionintoc {3}{Capillarit\IeC {\'e}}{12}{0}{3}
+\beamer@sectionintoc {4}{Exp\IeC {\'e}riences}{12}{0}{4}
+\beamer@subsectionintoc {4}{1}{Param\IeC {\`e}tres mesur\IeC {\'e}s}{14}{0}{4}
+\beamer@subsectionintoc {4}{2}{R\IeC {\'e}sultats}{16}{0}{4}
