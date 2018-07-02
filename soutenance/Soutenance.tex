@@ -12,6 +12,7 @@
 \usepackage{xcolor}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
+\usepackage[export]{adjustbox}
 \usepackage{tikz}
 \usetikzlibrary{quotes,angles,calc,intersections,babel,through,backgrounds,angles,positioning}
 \usepackage{rotating}
@@ -37,85 +38,45 @@
 %************************************************
 \begin{frame}
 \frametitle{Introduction}
-\begin{center}
-\includegraphics[height=0.2\linewidth]{./image/test628.jpg} \\ 
-\end{center}
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.8\linewidth]
+	{./image/un-pare-brise-illustration.jpg}
+	\caption{Pare brise}
+\end{figure}
 \end{frame}
 
 
 %************************************************
 \section{Couche limite}\label{sec:couche}
 %************************************************
-\begin{frame}
-\frametitle{Hypothèses}
-\begin{itemize}
-\item Écoulement bidimensionnel, stationnaire
-\item $u \sim U$, $v \sim V$, $x \sim L$, $y \sim \delta$
-\item $\frac{\delta}{L} << 1$
-\item $F_{visqueux} \sim F_{inertiel}$
-\end{itemize}
-\begin{align}	
-	\frac{\partial u}{\partial x} 
-	+
-	\frac{\partial v}{\partial y} 
-	&= 0 \\
-	u\frac{\partial u}{\partial x} + 
-	v\frac{\partial u}{\partial y} 
-	&= - \frac{1}{\rho}
-	\frac{\partial p}{\partial  x} +
-	\nu
-	\frac{\partial^{2} u}{\partial  y^{2}} \\
-	\frac{\partial p}{\partial y} 
-	&= 0
-\end{align}
-\end{frame}
-
 %************************************************
-\subsection{Couche limite de Blasius}\label{sub:Blasius}
+\subsection{Caractérisation de la couche limite}\label{sec:caractérisation}
 %************************************************
-
 \begin{frame}
-\frametitle{Couche limite de Blasius}
-\begin{itemize}
-\item Hypothèse couche limite
-\item Vitesse à l'infini constante et suivant $x$
-\end{itemize}
-On pose :
-
-\begin{align*}
-	u(x,y) &= 
-	\frac{\partial \varphi}{\partial y} \\
-	v(x,y) &= - 
-	\frac{\partial \varphi}{\partial x}
-\end{align*}
-
-Changement de variable :
-
-\begin{align*}
-	\eta &= y \sqrt{\frac{U}{\nu x }} \\
-	\varphi &= \sqrt{2\nu U x} f(\eta)
-\end{align*}
+\frametitle{Anénomètre à fil chaud}
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.4\linewidth}
+		\includegraphics[width = \linewidth]{./image/filchaud.jpg}
+		\caption{Mesure avec le fil chaud}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\linewidth}
+		\includegraphics[width=\linewidth]
+		{./image/filchaud2.jpg}
+		\caption{Fil chaud proche de la paroi}
+	\end{minipage}
+\end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Couche limite de Blasius}
-Équation de  Couche limite de Blasius :
-\begin{equation}	
-	\frac{d^{3}f}{d\eta^{3}} + \frac{1}{2}f\frac{d^{2} f}{d\eta^{2}} = 0
-\end{equation}
-Avec les conditions aux limites :
-\begin{align}
-	u(x,0) &= 0 &\Rightarrow &&
-	\left.
-	\frac{d f}{d \eta}     \right|_{\eta = 0} &= 0
-	\\
-	v(x,0) &= 0 &\Rightarrow &&
-	f(0) &= 0
-	\\
-	u(x,\infty) &= U &\Rightarrow &&
-	\left.
-	\frac{d f}{d \eta} \right|_{\eta = \infty} &= 1
-\end{align}
+\frametitle{Couche limite de Blasius : Comparaison profil Blasius et expérience}
+\begin{figure}[ht]
+	\centering
+	\includegraphics[scale = 0.4]{./image/Bla.png}
+	\caption{Profil de Blasius et expérimentaux}
+\end{figure}
 \end{frame}
 %************************************************
 \subsection{Comparaisons Blasius et expérience}\label{sec:comparaison}
@@ -147,11 +108,8 @@ Avec les conditions aux limites :
 
 \begin{equation}
 	C_{f}(x) =
-	\frac{2\tau_{y=0}}{\rho U^{2}} =
-	\frac{2\nu}{U^{2}}
-	\left.
-	\frac{\partial u}{\partial y}
-	\right|_{y = 0} \approx \frac{0.664}{\sqrt{Re_{x}}}
+	\frac{2\tau_{y=0}}{\rho U^{2}} 
+	 \approx \frac{0.664}{\sqrt{Re_{x}}}
 \end{equation}
 \end{frame}
 
@@ -234,41 +192,43 @@ Avec les conditions aux limites :
 \end{table}
 \end{frame}
 
-\begin{frame}
-\frametitle{Couche limite de Blasius : Comparaison profil Blasius et expérience}
-\begin{figure}[ht]
-	\centering
-	\includegraphics[scale = 0.5]{./image/Bla.png}
-	\caption{Profil de Blasius et expérimentaux}
-\end{figure}
-\end{frame}
-
-%************************************************
-\section{Capillarité}\label{sec:capillarite}
-%************************************************
-
 
 %************************************************
 \section{Expériences}\label{sec:experience}
 %************************************************
+
+
 \begin{frame}
 \frametitle{Dispositif expérimental : Camera, surface et écran à laser}
-\begin{figure}[!hb]
-\centering
-	\includegraphics[width = 0.4\linewidth]{./image/Surface.jpg}
-	\caption{Camera, surface et écran à laser}
-	\label{fig:Plan}
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.4\linewidth}
+		\includegraphics[width = \linewidth]{./image/Surface.jpg}
+		\caption{Camera, surface et écran à laser}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\linewidth}
+		\includegraphics[width=\linewidth]
+		{./image/crop_vitesse=28_volume=003.png}
+		\caption{Goutte d'eau de volume $0.03$ml}
+	\end{minipage}
 \end{figure}
 \end{frame}
 
-
 \begin{frame}
-\frametitle{Dispositif expérimental : Ecran d'observation}
-\begin{figure}[!hb]
-\centering
-	\includegraphics[width = 0.5\linewidth]{./image/Ecran.jpg}
-	\caption{Ecran d'observation}
-	\label{fig:Ecran d'observation}
+\frametitle{Dispositif expérimental : Ecran d'observation et séringue}
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.4\linewidth}
+		\includegraphics[width = \linewidth]{./image/Ecran.jpg}
+		\caption{Ecran d'observation}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\linewidth}
+		\includegraphics[height=0.8\linewidth,center]
+		{./image/seringue.jpg}
+		\caption{Séringue}
+	\end{minipage}
 \end{figure}
 \end{frame}
 
@@ -277,46 +237,23 @@ Avec les conditions aux limites :
 \frametitle{Paramètres mesurés}
 \begin{figure}[!ht]
 	\centering
-	\includegraphics[scale = 0.8]{./image/rrgou2.png}
+	\begin{minipage}{0.4\linewidth}
+		\includegraphics[width = \linewidth]
+		{./image/rrgou2.png}
 	\caption{Paramètres mesurés}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{Example de mesure}
-\begin{figure}[!ht]
-	\centering
-	\includegraphics[scale = 0.5]{./image/crop_tvitesse=28_volume=003.png}
+	\end{minipage}
+	\hfill
+	\begin{minipage}{0.4\linewidth}
+		\includegraphics[width=\linewidth]
+		{./image/crop_tvitesse=28_volume=003.png}
 	\caption{Goutte d'eau de volume $0.03$ml avec: \\$U = 0$, $\theta_{1} = \ang{45}$, $\theta_{2} = \ang{50.17}$, $x_{1} = 14.66mm$, $x_{2} = 6.77mm$,\\ $d = 7.89mm$, $h = 4.86mm$ et $x_{h} = 11.08mm$}
+	\end{minipage}
 \end{figure}
 \end{frame}
 
-\subsection{Résultats}
-
+\subsection{Analyse des données}
 \begin{frame}
-\frametitle{Résutats}
-\begin{figure}[!ht]
-	\centering
-		\includegraphics[width=\linewidth]{./image/v=24_vol=004_xaxrd.jpg}
-		\caption{$\textcolor{blue}{x_{a}}$,
-		$\textcolor{red}{x_{r}}$, $\textcolor{yellow}{d}$, 
-		$U_{\infty}=24m.s^{-1}$, \\
-                volume =$0.04ml$}
-		\label{fig:entre_xaxrd}
-		 \end{figure}
-\end{frame}
-\begin{frame}
-\frametitle{Analyse des résutats : $\textcolor{blue}{\theta_{a}}$,
-		$\textcolor{red}{\theta_{r}}$ pour $U_{\infty}=24m.s^{-1}$ et volume =$0.04ml$}
-\begin{figure}[!ht]
-		\includegraphics[width=\linewidth]{./image/v=24_vol=004_oaor.jpg}
-		\caption{$\textcolor{blue}{\theta_{a}}$,
-		$\textcolor{red}{\theta_{r}}$, $U_{\infty}=24m.s^{-1}$, volume =$0.04ml$}
-		\label{fig:entre_oaor}
- \end{figure}
-\end{frame}
-\begin{frame}
-\frametitle{Analyse des résutats : oscillations}
+\frametitle{Analyse des données : oscillations}
 \begin{figure}[!ht]
 		\includegraphics[width = 0.35\linewidth]{./image/test.jpg}\\
 		\includegraphics[width = 0.35\linewidth]{./image/test400.jpg}\\
@@ -324,65 +261,86 @@ Avec les conditions aux limites :
 		\includegraphics[width = 0.35\linewidth]{./image/test627.jpg}\\
 		\includegraphics[width = 0.35\linewidth]{./image/test628.jpg}\\
 		\includegraphics[width = 0.35\linewidth]{./image/test629.jpg}
-	\caption{$U_{\infty}=20m.s^{-1}$, de haut en bas nous avons :\\
+	\caption{$U_{\infty}=24m.s^{-1}$, de haut en bas nous avons :\\
 	$t = ~0s,~8s,~12.52s,~12.54s,~12.58s$}
 		\label{fig:test}
 \end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Analyse des résutats : $d$ pour $U_{\infty}=20m.s^{-1}$}
+	\frametitle{($x_{a}$, $x_{r}$, $d$), ($\theta_{a}$ et $\theta_{r}$), $U_{\infty}=24m.s^{-1}$ et volume = $0.04ml$}
 \begin{figure}[!ht]
-        \centering
-		\includegraphics[width = \linewidth]{./image/v=20d.jpg}
-	\caption{$d$, $U_{\infty}=20m.s^{-1}$}
-		\label{fig:v=20d}
+	\centering
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width=\linewidth]{./image/v=24_vol=004_xaxrd_m.jpg}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width=\linewidth]
+		{./image/v=24_vol=004_oaor_m.jpg}
+	\end{minipage}
 \end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Analyse des résutats : $\theta_{a}$ pour $U_{\infty}=20m.s^{-1}$}
+	\frametitle{$d$, $\theta_{a}$ pour $U_{\infty}=24m.s^{-1}$}
 \begin{figure}[!ht]
-
-	\includegraphics[width = \linewidth]{./image/v=20oa_2.jpg}
-	\caption{$\theta_{a}$, $U_{\infty}=20m.s^{-1}$}
-		\label{fig:v=20oa_2}
+	\centering
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width = \linewidth]{./image/v=24d.jpg}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.5\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24oa_2.jpg}
+	\end{minipage}
 \end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Analyse des résutats : $\theta_{r}$ pour $U_{\infty}=20m.s^{-1}$}
+	\frametitle{$d$, $\theta_{r}$ pour $U_{\infty}=24m.s^{-1}$}
 \begin{figure}[!ht]
-        \centering
-	\includegraphics[width = \linewidth]{./image/v=20or_2.jpg}
-	\caption{$\theta_{r}$, $U_{\infty}=20m.s^{-1}$}
-		\label{fig:v=20or_2}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{Analyse des résutats : $x_{max}$ pour $U_{\infty}=20m.s^{-1}$}
-\begin{figure}[!ht]
-        \centering
-	\includegraphics[width = \linewidth]{./image/v=20xm.jpg}
-	\caption{$x_{max}$, $U_{\infty}=20m.s^{-1}$}
-		\label{fig:v=20xm}
-\end{figure}
-\end{frame}
-
-\begin{frame}
-\frametitle{Analyse des résutats : $y_{max}$ pour $U_{\infty}=28m.s^{-1}$}
-\begin{figure}[!ht]
-        \centering
-	\includegraphics[width = 0.9\linewidth]{./image/v=20ym.jpg}
-	\caption{$y_{max}$, $U_{\infty}=28m.s^{-1}$}
-		\label{fig:v=20ym}
+	\centering
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width = \linewidth]{./image/v=24d.jpg}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.5\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24or_2.jpg}
+	\end{minipage}
 \end{figure}
 \end{frame}
 
 
 \begin{frame}
-\frametitle{Analyse des résutats : longueur $d$ avec et sans debit}
+	\frametitle{$y_{max}$, $\theta_{a}$ pour $U_{\infty}=24m.s^{-1}$}
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width = \linewidth]{./image/v=24ym.jpg}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.5\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24oa_2.jpg}
+	\end{minipage}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{$y_{max}$, $\theta_{r}$ pour $U_{\infty}=24m.s^{-1}$}
+\begin{figure}[!ht]
+	\centering
+	\begin{minipage}{0.5\linewidth}
+		\includegraphics[width = \linewidth]{./image/v=24ym.jpg}
+	\end{minipage}
+	\vfill
+	\begin{minipage}{0.5\linewidth}
+	\includegraphics[width = \linewidth]{./image/v=24or_2.jpg}
+	\end{minipage}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Analyse des données : longueur $d$ avec et sans debit}
 \begin{figure}[!ht]
         \centering
 	\includegraphics[width = \linewidth]{./image/p=365_vol=006d.jpg}
@@ -393,6 +351,11 @@ Avec les conditions aux limites :
 
 \begin{frame}
 \frametitle{Conclusion et perspectives}
+\begin{figure}[!ht]
+        \centering
+	\includegraphics[width = 0.9\linewidth]{./image/v=24ym.jpg}
+	\caption{$y_{max}$, $U_{\infty}=24m.s^{-1}$}
+\end{figure}
 \end{frame}
 
 \begin{frame}
