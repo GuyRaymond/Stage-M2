@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.12.6)  28 JUN 2018 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2016.12.6)  1 JUL 2018 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2171,11 +2171,6 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 11
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/12'.
 (microtype)             Ignoring protrusion settings for this character.
-
-Overfull \hbox (5.08159pt too wide) in paragraph at lines 12--12
- [][] []\T1/pplj/m/n/12 (-20) Épaisseur de quan-tité de mou-ve-ment []  
- []
-
 )
 \tf@toc=\write6
 \openout6 = `Rapport.toc'.
@@ -2290,11 +2285,6 @@ File: ./gfx/crop_vitesse=28_volume=003.png Graphic file (type png)
 Package pdftex.def Info: ./gfx/crop_vitesse=28_volume=003.png used on input lin
 e 7.
 (pdftex.def)             Requested size: 184.28992pt x 84.9179pt.
-
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 19.
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -2317,6 +2307,9 @@ File: ./gfx/Blasius.png Graphic file (type png)
 <use ./gfx/Blasius.png>
 Package pdftex.def Info: ./gfx/Blasius.png used on input line 88.
 (pdftex.def)             Requested size: 252.94695pt x 189.7102pt.
+Package microtype Info: Character `029' is missing
+(microtype)             in font `T1/pplj/m/sc/10.95'.
+(microtype)             Ignoring protrusion settings for this character.
 pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -2414,9 +2407,6 @@ Overfull \hbox (9.30205pt too wide) in paragraph at lines 85--86
 \OML/zplm/m/it/12 C[]$\T1/pplj/m/n/12 (-20) , un longueur
  []
 
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplj/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
 [11]) [12]
 \openout2 = `Chapters/Chapter4.aux'.
 
@@ -3023,7 +3013,7 @@ Chapters/Chapter5.tex
 
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 130.
 Package rerunfilecheck Info: File `Rapport.out' has not changed.
-(rerunfilecheck)             Checksum: 96B5F10A02BA3D1C3411ACAD7AAEC9BA;2228.
+(rerunfilecheck)             Checksum: 177BB260E5DBD02F619BA578632EA199;2151.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3033,12 +3023,12 @@ Package logreq Info: Writing requests to 'Rapport.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  34749 strings out of 493014
- 656197 string characters out of 6137001
+ 656137 string characters out of 6137001
  1061586 words of memory out of 5000000
  37219 multiletter control sequences out of 15000+600000
  105567 words of font info for 377 fonts, out of 8000000 for 9000
  1145 hyphenation exceptions out of 8191
- 70i,23n,91p,10511b,1952s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 69i,23n,90p,10511b,1952s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2016/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2016/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2016/texmf-dist/fo
 nts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2016/texmf-dist/fonts/type1
@@ -3049,7 +3039,7 @@ b><c:/texlive/2016/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb><c:/texliv
 e/2016/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb><c:/texlive/2016/texmf-dis
 t/fonts/type1/urw/palatino/uplr8a.pfb><c:/texlive/2016/texmf-dist/fonts/type1/u
 rw/palatino/uplri8a.pfb>
-Output written on Rapport.pdf (39 pages, 6979340 bytes).
+Output written on Rapport.pdf (39 pages, 6976390 bytes).
 PDF statistics:
  510 PDF objects out of 1000 (max. 8388607)
  418 compressed objects within 5 object streams

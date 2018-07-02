@@ -1,0 +1,52 @@
+* Article
+Bonjour notre présentation porte sur "nom article (lire ecran)"
+
+L'objectif de l'article est de présenter des résulats des expériences 
+faites sur une goute de taille du millimètre glissant sur un plan incliné
+dans les conditions de mouillage partielle
+
+ce qui motive ces expériences est d'une part due au fait qu'il n'y a pas 
+assez de résulats de ce type d'expérience dans la littérature 
+(la littérature s'étant concentré davantage au cas quasi statique) et
+d'autre part cette étude a des applications industrielles en particulier
+quand il s'agit d'enduire (recouvrir) de chocolat industriellement
+
+* Dispositif expérimental
+
+le liquide utilisé est le silicone parce que c'est un polymère dont la tension surpercielle
+varie avec la longueur du polymère .
+
+Une caméra est utilisée durant l'expérience pour pouvoir extraire les données comme les 
+angles de contact à la suite de l'expérience.
+A l'aide d'une séringue le liquide est déposé à une hauteur proche (pour réquire les impacts)
+d'une plaque carré de côté 22cm (recouvert d'un fluopolypoème qui permet d'assurer le mouillage partiel)
+à une fréquence d'une goutte toutes les 2 secondes (1/2s = 0.5hz)
+et on fait varier l'angle d'inclinaison de la plaque pour faire varier la vitesse de la goutte.
+
+* Transition d'un forme à l'autre
+
+
+Les transitions entre différent régime se fait à nombre capillaire constant (donc vitesse constante)
+
+La goutte commence à glisser à partir d'un certain angle ou d'un certaine vitesse
+A faible vitesse la goutte prend une forme ovale et si l'on augmente la vitesse
+la goutte prend une forme pointue (forme de l'arrière de la goutte).
+Le passage de forme ovale à forme pointue semble continue et on a d'abord une pointuearrondie
+et obtient la forme pointue vive en augmentant la vitesse.
+
+Si on augmente davantage la vitesse on a émission de goutellettes au niveau de la pointe 
+de la goutte (cette émission de gouttelles n'est pas souhaité dans les applications industrielles)
+
+
+(Remarque: Ces résultats semblent indépendant de la taille de la goutte.)
+ 
+* Bilan des forces
+
+ Trois forces agissent sur notre surface: le poids, la force de frottement entre le sol et la goute et
+la force capillaire au niveau de l'interface air-liquide de la goutte.
+Les ordres de grandeur des ses forces sont "lire tableau"
+
+* Comparaison avec modèles
+
+Tous les modèles négligent l'hysterise (la difference entre l'angle de contact arrière et avant)
+Leur résultat sont en accord avec les modèles mais davantage avec celui de Cox et Voinov

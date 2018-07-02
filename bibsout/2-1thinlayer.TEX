@@ -1,0 +1,83 @@
+\input{aefm-macro}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \setcounter{chapter}{2}
+\begin{center}{\large CHAPTER 2: LOW VISCOUS FLOWS} \end{center}
+ 2-1-thinlayer.tex\\
+\\
+Because of the inherent nonlinearity, most fluid-dynamical  problems must be solved by either  analytical approximations  or by  numerical computations.  
+In this chapter  we shall first explain the lubrication approximation, with applications to the flow of thin layers. Attention will then be turned to the slow flow past a sphere and a cylinder. Application to the environmental pblem of aerols will be briefly discussed. Lastly the slow withdrawl of fluid from a straitified reservoir into a sink will be analyzed. 
+
+
+  \section{A thin fluid layer  flowing down an incline} 
+\setcounter{equation}{0}
+As our first example, we consider  the flow   of a thin layer of   viscous fluid on an inclined plane.  
+Referring to Figure \ref{fig:inclin-sht}, let the $x-$ axis coincide with the  plane  bed inclined at the angle $\theta$ with respect to the horizon, and the $y-$ axis normal to the plane bed, 
+\begin{figure}[h]
+	\begin{center}
+		\includegraphics[scale=0.80]{2-1-1}
+	\end{center}
+	\caption{A thin  fluid layer flowing down an incline plane}
+	\label{fig:inclin-sht}
+\end{figure}
+
+ 
+
+\subsection{Exact equations} 
+
+Continuity :
+\be \f{\p u}{\p x} + \f{\p v}{\p y} = 0 \ee
+Momentum :
+\be \f{\p u}{\p t} + u\f{\p u}{\p x} + v\f{\p u}{\p y} =   g \sin \theta - 
+\f{1}{\rho}\f{\p p}{\p x} + \nu \lp \f{\p^2  u}{\p x^2} + \f{\p^2 u}{\p y^2 } \rp \ee
+and
+\be \f{\p v}{\p t} + u\f{\p v}{\p x} + v\f{\p v}{\p y} = -g \cos \theta -\f{1}{\rho}\f{\p p}{\p y} + \nu \lp \f{\p^2  v}{\p x^2} + \f{\p^2 v}{\p y^2 } \rp \ee
+
+
+\subsection{Exact boundary conditions}
+
+On the rigid bottom  no slipping is allowed, 
+\be u=v=0, ~~~ y = 0.
+\ee
+ The top of the fluid layer of local depth $h(x,t)$ is a material surface whose position is   unknown until the problem is solved. It is necessary to specify a kinematic boundary condition concerning the motion, and two  dynamic conditions  concerning the stresses.
+
+
+\underline{Kinematic condtion:}
+
+Since the top is a material surface,it must be always composed of the same fluid particles. The fluid velocity must be tangential to the moving  surface at all times. Let us describe  the top surface by 
+\be F(\vec{x},t)= F(x,y,t)\equiv y-h(x,t)=0\label{freesurface}\ee
+  Consider a   surface point  which   is at  $\vec x$ at time $t$, then it will move to $\vec{x}+\vec{q_s}dt$ at time $t+dt$ where $dt$ is a very short time interval and $\vec{q_s}$ is the velocity of  the surface point. The new top surface  is then described by
+ \[ F(\vec{x}+\vec{q_s}dt, t+dt)=0\]
+Taylor-expanding for small $dt$, we get
+\[  F(\vec{x}, t) + dt \lp \f{\p F(\vec{x}, t)}{\p t}+\vec{q_s}\cdot \nabla  F(\vec{x}, t)\rp +O(dt)^2=0\]
+  The first term vanishes because of (\ref{freesurface}), hence
+\[   \f{\p F(\vec{x}, t)}{\p t}+\vec{q_s}\cdot \nabla  F(\vec{x}, t)=0\]
+ in the limit of $dt=0$. Now the unit normal to the surface is \[ \vec n= \f{\nabla  F(\vec{x}, t)}{| \nabla  F(\vec{x}, t)|}\]
+ and the normal component of the surface velocity is
+$\vec{q_s}\cdot \vec n$.  Since the normal velocity of a fluid  particle $\vec q$ on the surface must be equal to  the  normal velocity   of the surface at the same point,
+\[\f{\vec{q_s}\cdot \nabla  F(\vec{x}, t)}{| \nabla  F(\vec{x}, t)|} =\f{\vec{q}\cdot \nabla  F(\vec{x}, t)}{| \nabla  F(\vec{x}, t)|} \] it  follows that
+\be   \f{\p F(\vec{x}, t)}{\p t}+\vec{q}\cdot \nabla  F(\vec{x}, t)=0\ee 
+ This is the kinematic bounday conditon on the top fluid surface.  Substituting $F=y-h(x,t)=0$ we get the kinematic boundary condition. 
+  \be \f{\p h}{\p t} + u \f{\p h}{\p x} = v, \quad y = h(x,t)\label{kbc}\ee
+
+\underline{Dynamic boundary conditions}
+
+Let the free surface be stress-free:
+\be \Sigma_i=\lp -p\delta_{ij} + \tau_{ij} \rp n_j = 0, \quad i = 1,2. \ee
+or
+\be \Sigma_1=-p n_1 + \tau_{11} n_1 + \tau_{12}n_2= 0\ee
+\be \Sigma_2 =-p n_2 +\tau_{21}n_1 +\tau_{22} n_2 = 0. \ee
+on $y=h$. The unit normal vector  has the components: 
+\be n_1 = -\f{\f{\p h}{\p x}}{\sqrt{1+\lp \f{\p h}{\p x}\rp^2}}, \quad n_2 =  \f{1}{\sqrt{1+\lp \f{\p h}{\p x}\rp^2}}\ee
+
+So far these exact boundary conditions are highly nonlinear,  in part because the position for applying these conditions are not known. As an useful consequence of  (\ref{kbc}) to be used later, we  
+integrate the continuity equation in depth, to get, after invoking Leibnitz's rule 
+\[ \int_0^h\lp \f{\p u}{\p x}+\f{\p v}{\p y}\rp dy= \f{\p}{\p x}  \int_0^h u\, dx -  u(x,h,t)\f{\p h}{\p x} +v(x,h(x,t),t)=  0 \]
+With the help of  (\ref{kbc}), we get the depth-integrated law of mass conservation,
+\be \f{\p h}{\p t} +\f{\p}{\p x}\lp \int_0^h u\, dy\rp = \f{\p h}{\p t} +\f{\p Q }{\p x}= \f{\p h}{\p t} +\f{\p (   {\overline u} h)}{\p x} =0 \label{int-mass}\ee
+where $Q$ denotes the rate of volume discharge and $\overline u$   the depth averaged horizontal velocity
+\be \overline u= \f{Q}{h}=\f{1}{h}\int_0^h u\, dy\ee
+  
+ 
+
+\end{document}
