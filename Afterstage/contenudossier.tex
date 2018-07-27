@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\author{BESSENG A IREH Guy Raymond}
+\title{Contenu des dossiers}
+\date{}
+\begin{document}
+\maketitle
+
+\section{Dossier : Afterstage}
+il contient les images et les programmes matlab faits après le stage.
+
+\section{Dossier : Biblio}
+Ce dossier contient la bibliographie (des pdf).
+
+\section{Dossier : Rapport}
+Ce dossier contient le rapport de stage, les planches de ma soutenance de fin de stage et celle de la soutenance bibliographique.
+
+\section{Regul\_S4}
+
+Il contient le dossier vitessedata.
+
+
+Le dossier vitessedata contient des fichiers en .dat de mêmes noms que les fichiers du dossir <Vitesse> (eux en .tif).
+Ces fichiers en .dat donnent la réelle évolution de la vitesse au cours du temps.
+
+\section{Dossier : matlab}
+
+Ce dossier contient les fonctions du stage dont les principales fonctions sont dans les fichiers (elles peuvent se lancer comme des scripts):
+\subsection{Fichier : sauver.m}
+
+Cette fonction a servi à sauvegarder les données des fichier .tif (du dossier <Vitesse>) en fichier .mat dans le dossier <Vitessedotmat>.
+
+le dossier <Vitesseext> contient des fichiers .mat, mais les ordonnées sont 
+en absolue alors que dans le dossier <Vitessedomat> les ordonnées sont données rapport à la ligne où la goutte est posée. 
+
+Il manque les données du fichier <vitesse=28\_volume=0.001\_pression=473\_temperature=24.0.tif> dans le dossier <Vitesseext>.
+
+\subsection{Fichier : plotmat.m}
+
+C'est un fichier pour faire des courbes des données comme le maximum ou encore l'angle d'avancée.
+
+\subsection{Fichier: plotmatandtif.m}
+C'est pour dessiner la courbe de la goutte et de ses tangentes.
+
+\subsection{Fichier : debugger.m}
+Il permet de calculer les données d'un fichier .tif du dossier <Vitesse> sans les sauvegarder dans un fichier .mat.
+Il aide à comprendre d'où peut venir les problèmes d'un fichier qui a du mal à être sauvegardé.
+
+\subsection{Fichier: couchelimiteblasius}
+Ce fichier sert à comparer les épaisseurs de déplacement, de quantité de mouvement et le coefficient de frottement à la paroi avec la théorie de la couche limite de Blasius laminaire.
+Ce fichier a été utilisé avec le dossier <DISA voie C1 bis> et peut être aussi utilisé avec les dossiers <DISA voie C1> et <Mini CTA voie E9>.
+
+\subsection{Fichier : profilblasisus.m}
+
+Il permet de tracer le profil de la couche limite laminaire de Blasius et utilise les mêmes dossiers que le fichier couchelimiteblasius.m.
+
+
+\end{document}

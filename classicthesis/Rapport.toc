@@ -14,9 +14,9 @@
 \contentsline {section}{\numberline {2.6}{Comparaisons avec nos exp\IeC {\'e}riences}}{6}{section.2.6}
 \contentsline {chapter}{\numberline {3}{Capillarit\IeC {\'e}}}{9}{chapter.3}
 \contentsline {section}{\numberline {3.1}{Tension de surface}}{9}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}{Mouillage}}{9}{subsection.3.1.1}
-\contentsline {section}{\numberline {3.2}{Hyst\IeC {\'e}r\IeC {\'e}sis}}{10}{section.3.2}
-\contentsline {section}{\numberline {3.3}{Mod\IeC {\`e}les d'angle dynamique}}{11}{section.3.3}
+\contentsline {section}{\numberline {3.2}{Mouillage}}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}{Hyst\IeC {\'e}r\IeC {\'e}sis}}{10}{section.3.3}
+\contentsline {section}{\numberline {3.4}{Mod\IeC {\`e}les d'angle dynamique}}{11}{section.3.4}
 \contentsline {chapter}{\numberline {4}{Exp\IeC {\'e}riences}}{13}{chapter.4}
 \contentsline {section}{\numberline {4.1}{Dispositif exp\IeC {\'e}rimental}}{13}{section.4.1}
 \contentsline {section}{\numberline {4.2}{An\IeC {\'e}mom\IeC {\`e}tre \IeC {\`a} fil chaud}}{14}{section.4.2}
